@@ -1,0 +1,669 @@
+Perform a complete, site-wide mobile responsiveness audit and FIX every issue you find. Do not simply provide recommendations or a report. Make the necessary changes directly to the website.
+
+The goal is for the entire site to feel intentionally designed for mobile—not like a desktop website that has merely been shrunk down.
+
+Audit EVERY page, template, reusable component, header, footer, navigation element, popup, form, card, section, widget, and interactive element across the site.
+
+## DEVICE SIZES TO TEST
+
+Test the site at minimum at these viewport widths:
+
+* 320px — small mobile
+* 360px — common Android
+* 375px — standard iPhone
+* 390px — modern iPhone
+* 414px — larger mobile
+* 430px — large iPhone
+* 768px — tablet portrait
+* 820px — larger tablet
+* Mobile landscape orientation
+* Tablet landscape orientation
+
+Do not optimize only for one specific device.
+
+Use responsive behavior that works fluidly between breakpoints.
+
+---
+
+## 1. HORIZONTAL OVERFLOW
+
+Inspect the entire website for ANY element causing horizontal scrolling.
+
+Fix issues including:
+
+* elements wider than the viewport
+* fixed-width containers
+* images exceeding their containers
+* long URLs or text
+* tables
+* forms
+* buttons
+* sliders
+* carousels
+* embeds
+* iframes
+* maps
+* videos
+* code blocks
+* absolute-positioned elements
+* decorative background elements
+* oversized icons
+* CSS transforms pushing content outside the viewport
+
+There should be NO unintended horizontal scrolling at any mobile width.
+
+Do not hide legitimate layout problems by simply applying `overflow-x: hidden` globally. Fix the actual element causing the overflow.
+
+---
+
+## 2. PAGE CONTAINERS & SPACING
+
+Audit all containers, sections, rows, grids, columns, and wrappers.
+
+Ensure:
+
+* appropriate mobile side padding
+* consistent spacing throughout the website
+* content never touches the edge of the screen
+* sections are not excessively wide or narrow
+* desktop margins do not create huge empty spaces
+* vertical spacing does not feel excessive on mobile
+* sections do not have unnecessarily large desktop-sized padding
+* nested containers do not create excessive left/right padding
+
+Aim for approximately 16–24px horizontal page padding on typical mobile devices unless the design intentionally calls for something different.
+
+---
+
+## 3. RESPONSIVE TYPOGRAPHY
+
+Audit every:
+
+* H1
+* H2
+* H3
+* H4
+* paragraph
+* label
+* button
+* navigation item
+* card heading
+* caption
+* testimonial
+* statistic
+* CTA
+* footer element
+
+Make typography scale appropriately for mobile.
+
+Prevent:
+
+* enormous desktop headings
+* tiny unreadable text
+* awkward one-word lines
+* excessive line wrapping
+* text clipping
+* overlapping text
+* text extending outside containers
+* extremely long line heights
+* headings that dominate the entire screen
+
+Use responsive typography such as `clamp()` where appropriate rather than creating unnecessary breakpoints.
+
+Maintain the existing visual hierarchy and brand identity.
+
+---
+
+## 4. HEADER & MOBILE NAVIGATION
+
+Thoroughly test the site header.
+
+Verify:
+
+* logo fits properly
+* logo is not oversized
+* hamburger/menu button is easy to tap
+* navigation opens and closes correctly
+* dropdowns work on touch devices
+* nested navigation is usable
+* menu content is scrollable if taller than the viewport
+* navigation does not extend off-screen
+* CTA buttons fit
+* header does not consume excessive vertical space
+* sticky headers do not cover content
+* menu overlays have correct z-index
+* navigation cannot become trapped behind other elements
+
+If the desktop navigation does not work well on mobile, replace it with an appropriate mobile navigation pattern.
+
+---
+
+## 5. HERO SECTIONS
+
+Audit every hero/banner section.
+
+Ensure:
+
+* headings fit correctly
+* supporting copy remains readable
+* CTA buttons fit
+* multiple CTAs stack appropriately when necessary
+* hero height does not create excessive empty space
+* important content appears reasonably high on the screen
+* background images crop appropriately
+* foreground subjects are not cut off
+* background-position changes appropriately by screen size
+* overlays remain legible
+* hero graphics do not overflow
+
+Do not force large desktop hero heights such as 700–1000px onto small mobile screens unless the design specifically requires it.
+
+---
+
+## 6. COLUMNS, GRIDS & FLEXBOX
+
+Audit every multi-column section.
+
+On smaller screens:
+
+* stack columns when appropriate
+* reduce the number of grid columns
+* maintain logical reading order
+* prevent squeezed columns
+* ensure cards remain wide enough to read
+* eliminate awkward 2–3 column layouts that are too narrow
+* adjust gaps appropriately
+
+Check CSS Grid and Flexbox carefully for fixed `min-width` values that could cause overflow.
+
+Use `min-width: 0` on flex/grid children where necessary to prevent content overflow.
+
+---
+
+## 7. IMAGES & GRAPHICS
+
+Audit every image and graphic.
+
+Ensure:
+
+* `max-width: 100%`
+* proper responsive sizing
+* correct aspect ratio
+* no distortion
+* no clipping unless intentional
+* no image wider than its container
+* appropriate cropping on mobile
+* decorative images do not interfere with content
+* absolute-positioned graphics do not overlap text
+* SVGs resize correctly
+
+If an image's desktop composition does not work on mobile, adjust its crop, position, dimensions, or layout specifically for mobile.
+
+---
+
+## 8. VIDEO, IFRAMES, MAPS & EMBEDS
+
+Make every embedded element responsive.
+
+This includes:
+
+* YouTube
+* Vimeo
+* Google Maps
+* social embeds
+* external forms
+* review widgets
+* calendars
+* chat widgets
+* third-party iframes
+
+They must never exceed viewport width.
+
+Preserve video aspect ratios.
+
+---
+
+## 9. BUTTONS & TOUCH TARGETS
+
+Audit every clickable element.
+
+Ensure buttons and links:
+
+* are easy to tap
+* are not too close together
+* do not overflow
+* do not contain awkward multi-line text unless necessary
+* have sufficient height
+* have adequate spacing
+
+Aim for touch targets approximately 44×44px or larger where practical.
+
+Check:
+
+* icon buttons
+* hamburger icons
+* arrows
+* close buttons
+* accordion controls
+* pagination
+* carousel controls
+* social icons
+* form controls
+
+---
+
+## 10. FORMS
+
+Test EVERY form on mobile.
+
+Verify:
+
+* fields fit the screen
+* inputs are not wider than containers
+* labels remain readable
+* radio buttons are usable
+* checkboxes are usable
+* dropdowns fit
+* textareas resize properly
+* validation messages do not break the layout
+* error messages remain visible
+* submit buttons are easy to tap
+* multi-column forms collapse appropriately
+* form steps remain usable
+* date pickers work on mobile
+* file uploads work
+* CAPTCHA/reCAPTCHA does not overflow
+* success messages display correctly
+
+Inputs should use at least approximately 16px text on mobile where appropriate to avoid unwanted iOS auto-zoom.
+
+---
+
+## 11. CARDS & CONTENT BLOCKS
+
+Audit cards including:
+
+* services
+* products
+* team members
+* testimonials
+* blog posts
+* pricing
+* statistics
+* features
+* portfolios
+* locations
+
+Ensure:
+
+* cards stack appropriately
+* consistent spacing is maintained
+* card heights do not create awkward blank areas
+* content does not overflow
+* buttons remain accessible
+* images maintain appropriate proportions
+
+Do not force equal card heights if it creates excessive blank space on mobile.
+
+---
+
+## 12. TABLES
+
+Find every table.
+
+Tables must not destroy the mobile layout.
+
+Depending on the content, implement the best solution:
+
+* responsive horizontal scrolling within the table container
+* stacked/mobile table presentation
+* responsive cards
+* hidden secondary columns only when information is genuinely nonessential
+
+Do not allow tables to make the entire webpage horizontally scroll.
+
+---
+
+## 13. MODALS, POPUPS & OVERLAYS
+
+Test:
+
+* modal windows
+* promotional popups
+* cookie banners
+* chat widgets
+* lightboxes
+* slide-ins
+* menus
+* notifications
+
+Ensure they:
+
+* fit within the viewport
+* can be closed easily
+* have visible close controls
+* remain usable with the mobile keyboard open
+* do not cover critical navigation
+* do not extend below inaccessible portions of the viewport
+* do not cause body scrolling problems
+* respect mobile safe areas
+
+---
+
+## 14. FIXED & STICKY ELEMENTS
+
+Inspect every element using:
+
+* `position: fixed`
+* `position: sticky`
+* `position: absolute`
+
+Pay special attention to:
+
+* headers
+* chat widgets
+* call buttons
+* sticky CTA bars
+* reCAPTCHA badges
+* social buttons
+* floating icons
+* back-to-top buttons
+
+Prevent elements from overlapping each other or covering important content.
+
+Account for iPhone safe-area spacing where appropriate using `env(safe-area-inset-*)`.
+
+---
+
+## 15. MOBILE VIEWPORT HEIGHT
+
+Avoid relying blindly on `100vh`.
+
+Mobile browsers have dynamic address/navigation bars that can cause viewport-height problems.
+
+Use modern viewport units such as:
+
+* `dvh`
+* `svh`
+* `lvh`
+
+where appropriate.
+
+Make sure full-screen sections remain usable when browser chrome appears or disappears.
+
+---
+
+## 16. ACCORDIONS, TABS, SLIDERS & INTERACTIONS
+
+Test every interactive component using touch behavior rather than assuming hover.
+
+Ensure:
+
+* hover is never required to access important information
+* accordions open correctly
+* tabs remain usable
+* sliders support touch/swipe where appropriate
+* carousel arrows are accessible
+* tooltips have a mobile alternative
+* dropdowns work without hover
+* animations do not interfere with tapping or scrolling
+
+---
+
+## 17. ANIMATIONS
+
+Audit GSAP, CSS animations, scroll effects, parallax, transforms, and entrance animations.
+
+On mobile:
+
+* avoid excessive movement
+* prevent animation-related overflow
+* ensure text does not render off-screen
+* reduce expensive effects
+* disable heavy parallax when necessary
+* avoid scroll-jacking
+* ensure pinned sections work correctly
+* ensure animations don't create blank areas
+
+Respect:
+
+`prefers-reduced-motion`
+
+where appropriate.
+
+---
+
+## 18. CONTENT ORDER
+
+Desktop layouts sometimes use visual positioning that creates the wrong reading order on mobile.
+
+Check every stacked mobile section and ensure the content appears in a logical sequence, for example:
+
+Heading
+Text
+Image
+CTA
+
+rather than an order caused by desktop column positioning.
+
+Do not break semantic DOM order solely for desktop appearance.
+
+---
+
+## 19. MOBILE PERFORMANCE
+
+Optimize the mobile experience without unnecessarily changing the visual design.
+
+Check:
+
+* oversized images
+* unnecessarily large background images
+* unnecessary video autoplay
+* excessive JavaScript
+* unnecessary animation libraries
+* render-blocking resources
+* lazy loading
+* font loading
+* layout shifts
+* image dimensions
+* below-the-fold assets
+
+Prioritize good Core Web Vitals, especially:
+
+* LCP
+* CLS
+* INP
+
+Do not sacrifice important design elements unless necessary; optimize their implementation first.
+
+---
+
+## 20. ACCESSIBILITY
+
+While performing the mobile audit, also verify:
+
+* readable contrast
+* keyboard accessibility
+* visible focus states
+* semantic headings
+* image alt text
+* form labels
+* button labeling
+* accessible navigation
+* appropriate ARIA usage
+* reduced-motion support
+
+Do not remove focus outlines unless replacing them with an equally visible focus state.
+
+---
+
+## 21. MOBILE KEYBOARD BEHAVIOR
+
+Test forms as though the mobile keyboard is open.
+
+Ensure:
+
+* focused fields remain visible
+* sticky elements do not cover inputs
+* modal forms remain scrollable
+* submit buttons can still be reached
+* viewport resizing does not destroy the layout
+
+Use appropriate HTML input types such as:
+
+* `email`
+* `tel`
+* `number`
+* `url`
+
+where appropriate so mobile users get the correct keyboard.
+
+---
+
+## 22. FOOTER
+
+Audit the full footer.
+
+On mobile:
+
+* stack columns cleanly
+* maintain logical ordering
+* keep links easy to tap
+* prevent long addresses/emails from overflowing
+* resize logos appropriately
+* make social icons usable
+* eliminate excessive whitespace
+* make legal/copyright information readable
+
+---
+
+## 23. DEVICE-SPECIFIC EDGE CASES
+
+Specifically check for:
+
+* iOS Safari
+* Android Chrome
+* mobile Safari browser bars
+* iPhone notch/Dynamic Island safe areas
+* landscape orientation
+* long navigation menus
+* very long page titles
+* long words/URLs
+* browser text scaling
+* touchscreen-only interaction
+* viewport resizing
+
+Do not depend on hover behavior for critical functionality.
+
+---
+
+## 24. PRESERVE DESKTOP DESIGN
+
+Mobile improvements must NOT break the desktop site.
+
+Preserve:
+
+* branding
+* colors
+* fonts
+* overall design language
+* desktop layouts
+* desktop spacing
+* existing functionality
+
+Only change desktop behavior when an underlying implementation is genuinely problematic.
+
+---
+
+## 25. REUSABLE COMPONENTS
+
+Whenever possible, solve responsiveness at the reusable component/template level instead of applying isolated page-specific patches.
+
+For example, if all service cards use the same component, fix the service-card component rather than adding individual fixes to 20 pages.
+
+Avoid excessive one-off CSS overrides.
+
+Keep the responsive system clean, maintainable, and predictable.
+
+---
+
+## 26. AUDIT THE ENTIRE SITE — NOT JUST THE HOMEPAGE
+
+Inspect every accessible page and page type, including:
+
+* Homepage
+* About
+* Services
+* Individual service pages
+* Locations
+* Individual location pages
+* Products
+* Product detail pages
+* Blog archive
+* Blog posts
+* Contact
+* Landing pages
+* Search results
+* 404 page
+* Login/account pages
+* Forms
+* Thank-you pages
+* Legal/privacy pages
+* Any dynamically generated pages
+* Any reusable templates
+
+Do not assume that fixing the homepage fixes the rest of the site.
+
+---
+
+## 27. FINAL QUALITY CHECK
+
+After implementing the fixes, perform a SECOND full mobile audit.
+
+Look specifically for:
+
+1. Horizontal scrolling
+2. Clipped content
+3. Overlapping elements
+4. Poor text wrapping
+5. Oversized headings
+6. Tiny text
+7. Excessive whitespace
+8. Insufficient spacing
+9. Broken grids
+10. Bad image cropping
+11. Off-screen buttons
+12. Difficult touch targets
+13. Broken mobile menus
+14. Form overflow
+15. Popup overflow
+16. Sticky/fixed element conflicts
+17. Broken landscape layouts
+18. Animation problems
+19. Tablet-specific issues
+20. Anything that looks visually awkward rather than intentionally designed
+
+Do not stop after making the first round of changes.
+
+---
+
+## IMPORTANT IMPLEMENTATION RULES
+
+* Make the fixes directly.
+* Do not merely tell me what should be fixed.
+* Do not redesign the site unnecessarily.
+* Preserve the existing brand and overall aesthetic.
+* Prefer clean responsive CSS over JavaScript-based viewport detection.
+* Prefer fluid sizing, CSS Grid, Flexbox, `clamp()`, `min()`, `max()`, and modern responsive CSS.
+* Avoid excessive `!important`.
+* Avoid arbitrary one-off breakpoints unless necessary.
+* Do not solve problems by simply hiding important content on mobile.
+* Do not globally hide horizontal overflow to conceal broken components.
+* Fix reusable components at their source whenever possible.
+* Keep accessibility intact.
+* Do not break desktop functionality while fixing mobile.
+* Verify changes after implementation.
+
+The finished site should look and behave as though the mobile version was deliberately designed alongside the desktop version from the beginning.
+
+Continue auditing and correcting issues until there are no obvious mobile responsiveness problems remaining across the entire site.

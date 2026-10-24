@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<script src="kiosk-data.js"></script>
+<script src="champs-data.js"></script>
+<style>
+html,body{margin:0;height:100%;background:#120a06;overflow:hidden;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+a{color:#e2b77a}a:hover{color:#fff}
+@keyframes kfade{from{opacity:0}to{opacity:1}}
+@keyframes kzoom{from{transform:scale(1)}to{transform:scale(1.07)}}
+*::-webkit-scrollbar{display:none}
+</style>
+</helmet>
+<div style="position:fixed;inset:0;background:#120a06;overflow:hidden" onPointerDown="{{ touch }}">
+<div data-screen-label="Kiosk" style="position:absolute;left:50%;top:50%;width:1080px;height:1920px;margin-left:-540px;margin-top:-960px;transform:{{ stageTransform }};transform-origin:center;overflow:hidden;background:#3b2014 url(uploads/leather.jpg) center/cover;font-family:Inter, sans-serif;color:#fff">
+
+<sc-if value="{{ isStart }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Start" style="position:absolute;inset:0">
+  <div style="position:absolute;left:0;top:0;width:1080px;height:610px;background:#0d6b37;overflow:hidden">
+    {{ startMedia }}
+    <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:3">
+      <img src="assets/sdga-logo.svg" alt="SDGA" style="width:480px;height:auto;filter:drop-shadow(0 10px 30px rgba(0,0,0,.45))">
+    </div>
+  </div>
+  <img src="uploads/leather-strip.jpg" alt="" style="position:absolute;left:0;top:606px;width:1080px;height:48px;object-fit:fill;z-index:4;box-shadow:0 10px 22px rgba(0,0,0,.5)">
+  <div style="position:absolute;left:0;top:654px;width:1080px;bottom:0;display:flex;flex-direction:column;justify-content:space-evenly;align-items:center;padding:40px 0 60px;box-sizing:border-box">
+    <sc-for list="{{ startTiles }}" as="t" hint-placeholder-count="4">
+      <div role="button" onClick="{{ t.open }}" style="display:flex;flex-direction:column;align-items:center;gap:26px;cursor:pointer;text-align:center">
+        <div style="font-family:Oswald, sans-serif;font-weight:700;font-size:92px;line-height:.95;text-transform:uppercase;text-shadow:0 4px 18px rgba(0,0,0,.45)">{{ t.title }}</div>
+        <span style="display:flex;align-items:center;justify-content:center;gap:12px;min-width:314px;height:66px;padding:0 28px;box-sizing:border-box;background:#0d6b37;font-size:28px;font-weight:500;letter-spacing:.02em;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,.35)">{{ t.cta }} →</span>
+      </div>
+    </sc-for>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isAttract }}" hint-placeholder-val="{{ true }}">
+<div data-screen-label="Attract" style="position:absolute;inset:0">
+  <div style="position:absolute;left:0;top:0;width:1080px;height:605px;background:#0d6b37;overflow:hidden">{{ attractMedia }}</div>
+  <img src="uploads/leather-strip.jpg" alt="" style="position:absolute;left:0;top:602px;width:1080px;height:48px;object-fit:fill;z-index:2;box-shadow:0 10px 22px rgba(0,0,0,.5)">
+  <div role="button" onClick="{{ enterBrowse }}" style="position:absolute;left:0;top:650px;width:1080px;height:1270px;cursor:pointer;display:flex;flex-direction:column;align-items:center">
+    <div style="margin-top:34px;min-height:120px;display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 60px">
+      <sc-if value="{{ showSlideText }}" hint-placeholder-val="{{ true }}">
+      <div style="font-family:Oswald, sans-serif;font-weight:600;font-size:48px;line-height:1.1;text-transform:uppercase;letter-spacing:.02em;text-shadow:0 2px 6px rgba(0,0,0,.35)">{{ slide.name }}</div>
+      <div style="font-size:25px;margin-top:6px;letter-spacing:.02em">{{ slide.sub }}</div>
+      </sc-if>
+    </div>
+    <div style="margin-top:96px;font-family:Oswald, sans-serif;font-weight:700;font-size:176px;line-height:.98;text-transform:uppercase;text-align:center;letter-spacing:-.005em;text-shadow:0 4px 18px rgba(0,0,0,.3)">
+      <sc-if value="{{ isHof }}" hint-placeholder-val="{{ false }}"><div>Hall<br>of Fame</div></sc-if>
+      <sc-if value="{{ isCourses }}" hint-placeholder-val="{{ false }}"><div>Course<br>Directory</div></sc-if>
+      <sc-if value="{{ isGoty }}" hint-placeholder-val="{{ false }}"><div>Golfers<br>of the<br>Year</div></sc-if>
+      <sc-if value="{{ isChampsK }}" hint-placeholder-val="{{ false }}"><div style="font-size:150px">Championship<br>Winners</div></sc-if>
+    </div>
+    <div style="margin-top:44px;background:#0d6b37;padding:22px 52px;font-size:40px;font-weight:500;letter-spacing:.01em;border-radius:12px;box-shadow:0 8px 22px rgba(0,0,0,.35);display:flex;align-items:center;gap:16px">{{ ctaLabel }} <span>→</span></div>
+    <img src="assets/sdga-logo.svg" alt="South Dakota Golf Association" style="position:absolute;left:50%;bottom:90px;width:256px;margin-left:-128px">
+  </div>
+  <sc-if value="{{ showAllChip }}" hint-placeholder-val="{{ false }}">
+    <div role="button" onClick="{{ goStart }}" style="position:absolute;left:32px;top:32px;z-index:4;background:rgba(0,0,0,.55);width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer" aria-label="All kiosks"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M15 5l-7 7 7 7"></path></svg></div>
+  </sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{ isBrowse }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Browse" style="position:absolute;inset:0;display:flex;flex-direction:column;background:#f3f3f0;color:#1c2420">
+  <div style="height:220px;flex:none;display:flex;align-items:center;gap:32px;padding:0 48px;background:#3b2014 url(uploads/leather.jpg) center/cover;color:#fff">
+    <div role="button" onClick="{{ goAttract }}" aria-label="Home" style="width:104px;height:104px;flex:none;border-radius:50%;border:2px solid rgba(255,255,255,.5);display:flex;align-items:center;justify-content:center;cursor:pointer">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M3 11 12 4l9 7v9h-6v-6H9v6H3z"></path></svg>
+    </div>
+    <div style="flex:1;min-width:0">
+      <div style="font-size:22px;letter-spacing:.16em;text-transform:uppercase;color:#e2b77a">South Dakota Golf Association</div>
+      <div style="font-family:Oswald, sans-serif;font-weight:700;font-size:84px;line-height:1;text-transform:uppercase;margin-top:6px">{{ browseTitle }}</div>
+    </div>
+    <img src="assets/sdga-logo.svg" alt="" style="width:132px;flex:none">
+  </div>
+  <img src="uploads/leather-strip.jpg" alt="" style="width:1080px;height:44px;object-fit:fill;flex:none;box-shadow:0 6px 14px rgba(0,0,0,.25);position:relative;z-index:2">
+  <sc-if value="{{ isChampsBrowse }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;padding:30px 48px 0;flex:none">
+      <div style="flex:1;display:flex;background:#e3e3dd;border-radius:40px;padding:6px;gap:6px">
+        <sc-for list="{{ viewTabs }}" as="v" hint-placeholder-count="2">
+          <div role="button" onClick="{{ v.pick }}" style="flex:1 1 0;height:68px;border-radius:34px;display:flex;align-items:center;justify-content:center;font-family:Oswald, sans-serif;font-size:28px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;background:{{ v.bg }};color:{{ v.color }};box-shadow:{{ v.shadow }}">{{ v.label }}</div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-if>
+  <sc-if value="{{ isYearView }}" hint-placeholder-val="{{ false }}">
+    <div style="position:relative;padding:22px 48px 4px;flex:none;display:flex;align-items:center;gap:16px">
+      <div role="button" onClick="{{ yearToggle }}" style="flex:1;height:72px;padding:0 32px;border-radius:36px;display:flex;align-items:center;justify-content:space-between;gap:24px;font-family:Oswald, sans-serif;font-size:34px;font-weight:600;cursor:pointer;background:#fff;color:#1c2420;border:2px solid #d4d4ce">
+        <span>{{ yearLabel }}</span><span style="font-size:26px;line-height:1;color:#0d6b37">{{ yearCaret }}</span>
+      </div>
+      <sc-if value="{{ yearOpen }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute;top:104px;left:48px;right:48px;z-index:30;max-height:640px;overflow-y:auto;-webkit-overflow-scrolling:touch;background:#fff;border:1px solid #d4d4ce;border-radius:6px;box-shadow:0 18px 40px rgba(28,36,32,.22);padding:20px 24px;display:flex;flex-direction:column;gap:18px">
+          <sc-for list="{{ yearDecades }}" as="dg" hint-placeholder-count="4">
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <div style="font-size:18px;letter-spacing:.16em;text-transform:uppercase;color:#6b716d;font-weight:600">{{ dg.label }}</div>
+              <div style="display:flex;flex-wrap:wrap;gap:10px">
+                <sc-for list="{{ dg.years }}" as="y" hint-placeholder-count="6">
+                  <div role="button" onClick="{{ y.pick }}" style="flex:none;min-width:116px;height:64px;padding:0 18px;border-radius:32px;display:flex;align-items:center;justify-content:center;font-family:Oswald, sans-serif;font-size:26px;font-weight:600;cursor:pointer;background:{{ y.bg }};color:{{ y.color }};border:2px solid {{ y.border }}">{{ y.label }}</div>
+                </sc-for>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-if>
+    </div>
+  </sc-if>
+  <sc-if value="{{ hasChips }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;gap:10px;padding:30px 48px 6px;flex:none">
+      <sc-for list="{{ chips }}" as="c" hint-placeholder-count="5">
+        <div role="button" onClick="{{ c.pick }}" style="flex:1 1 0;min-width:0;height:68px;padding:0 10px;border-radius:34px;display:flex;align-items:center;justify-content:center;white-space:nowrap;font-size:24px;font-weight:500;cursor:pointer;background:{{ c.bg }};color:{{ c.color }};border:2px solid {{ c.border }}">{{ c.label }}</div>
+      </sc-for>
+    </div>
+  </sc-if>
+  <sc-if value="{{ showSearch }}" hint-placeholder-val="{{ false }}">
+    <div style="padding:24px 48px 0;flex:none">
+      <div role="button" onClick="{{ openKb }}" style="height:84px;border-radius:42px;background:#fff;border:2px solid {{ searchBorder }};display:flex;align-items:center;gap:18px;padding:0 14px 0 32px;cursor:pointer">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#4a524d" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+        <div style="flex:1;min-width:0;font-size:30px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:{{ searchColor }}">{{ searchText }}</div>
+        <sc-if value="{{ hasQuery }}" hint-placeholder-val="{{ false }}">
+          <div role="button" onClick="{{ clearQuery }}" aria-label="Clear search" style="width:60px;height:60px;border-radius:50%;background:#e8e8e3;display:flex;align-items:center;justify-content:center;flex:none">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1c2420" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </sc-if>
+  <div style="padding:24px 48px 4px;font-size:24px;flex:none;color:#4a524d">{{ countLabel }}</div>
+  <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+    <div style="padding:60px 48px;font-size:30px;color:#4a524d;text-align:center">No members match “{{ query }}”</div>
+  </sc-if>
+  <sc-if value="{{ kbOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position:absolute;left:0;right:0;bottom:0;z-index:20;background:#2a1a12;padding:24px 24px 36px;display:flex;flex-direction:column;gap:12px;box-shadow:0 -10px 30px rgba(0,0,0,.35)">
+      <sc-for list="{{ kbRows }}" as="row" hint-placeholder-count="3">
+        <div style="display:flex;gap:10px;justify-content:center">
+          <sc-for list="{{ row.keys }}" as="key" hint-placeholder-count="10">
+            <div role="button" onClick="{{ key.press }}" style="width:92px;height:96px;border-radius:10px;background:#f3f3f0;color:#1c2420;display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:600;cursor:pointer" style-active="background:#d4d4ce">{{ key.label }}</div>
+          </sc-for>
+        </div>
+      </sc-for>
+      <div style="display:flex;gap:10px;justify-content:center">
+        <div role="button" onClick="{{ kbBack }}" style="width:194px;height:96px;border-radius:10px;background:#5a4034;color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:600;cursor:pointer">Delete</div>
+        <div role="button" onClick="{{ kbSpace }}" style="width:500px;height:96px;border-radius:10px;background:#f3f3f0;color:#1c2420;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:600;cursor:pointer">Space</div>
+        <div role="button" onClick="{{ closeKb }}" style="width:296px;height:96px;border-radius:10px;background:#0d6b37;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:600;cursor:pointer">Done</div>
+      </div>
+    </div>
+  </sc-if>
+  <div ref="{{ gridRef }}" onScroll="{{ touch }}" style="flex:1;overflow-y:auto;padding:20px 48px 120px;-webkit-overflow-scrolling:touch">
+    <sc-if value="{{ isYearView }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;flex-direction:column;gap:36px">
+        <sc-for list="{{ yearGroups }}" as="g" hint-placeholder-count="3">
+          <div style="background:#fff;border:1px solid #e2e2dd;border-radius:6px;box-shadow:0 4px 14px rgba(28,36,32,.08);overflow:hidden">
+            <div style="padding:18px 28px;background:#0d6b37;color:#fff;font-size:22px;letter-spacing:.16em;text-transform:uppercase;font-weight:600">{{ g.label }}</div>
+            <sc-for list="{{ g.rows }}" as="r" hint-placeholder-count="4">
+              <div style="display:flex;align-items:center;gap:24px;padding:22px 28px;border-top:1px solid #e8e8e3">
+                <div style="width:360px;flex:none;font-size:24px;color:#4a524d;text-wrap:pretty">{{ r.event }}</div>
+                <div style="flex:1;min-width:0">
+                  <div style="font-family:Oswald, sans-serif;font-weight:600;font-size:34px;line-height:1.1;text-transform:uppercase;text-wrap:balance">{{ r.winner }}</div>
+                  <sc-if value="{{ r.city }}" hint-placeholder-val="{{ false }}"><div style="font-size:22px;color:#4a524d;margin-top:4px">{{ r.city }}</div></sc-if>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </sc-for>
+      </div>
+    </sc-if>
+    <div style="display:grid;grid-template-columns:{{ gridCols }};gap:28px">
+      <sc-for list="{{ cards }}" as="it" hint-placeholder-count="9">
+        <div role="button" onClick="{{ it.open }}" style="background:#fff;border:1px solid #e2e2dd;border-radius:6px;overflow:hidden;cursor:pointer;box-shadow:0 4px 14px rgba(28,36,32,.08);display:flex;flex-direction:column">
+          <sc-if value="{{ it.showMedia }}" hint-placeholder-val="{{ true }}">
+          <div style="aspect-ratio:{{ it.aspect }};background:#0d6b37;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative">
+            <sc-if value="{{ it.photo }}" hint-placeholder-val="{{ true }}">
+              <img src="{{ it.photo }}" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 20%">
+            </sc-if>
+            <sc-if value="{{ it.noPhoto }}" hint-placeholder-val="{{ false }}">
+              <img src="assets/sdga-logo.svg" alt="" style="width:46%;opacity:.9">
+            </sc-if>
+          </div>
+          </sc-if>
+          <div style="padding:20px 22px 26px">
+            <sc-if value="{{ it.kicker }}" hint-placeholder-val="{{ true }}"><div style="font-size:19px;letter-spacing:.12em;text-transform:uppercase;color:#2d5f3b;font-weight:600;margin-bottom:8px">{{ it.kicker }}</div></sc-if>
+            <div style="font-family:Oswald, sans-serif;font-weight:600;font-size:{{ cardNameSize }}px;line-height:1.08;text-transform:uppercase">{{ it.name }}</div>
+            <div style="font-size:22px;margin-top:6px;color:#4a524d">{{ it.sub }}</div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isDetail }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Detail" style="position:absolute;inset:0;display:flex;flex-direction:column;background:#f3f3f0;color:#1c2420">
+  <sc-if value="{{ champHeader }}" hint-placeholder-val="{{ false }}">
+  <div style="height:220px;flex:none;display:flex;align-items:center;gap:32px;padding:0 48px;background:#3b2014 url(uploads/leather.jpg) center/cover;color:#fff">
+    <div role="button" onClick="{{ backToBrowse }}" aria-label="Back" style="width:104px;height:104px;flex:none;border-radius:50%;border:2px solid rgba(255,255,255,.5);display:flex;align-items:center;justify-content:center;cursor:pointer">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M15 5l-7 7 7 7"></path></svg>
+    </div>
+    <div style="flex:1;min-width:0">
+      <div style="font-size:22px;letter-spacing:.16em;text-transform:uppercase;color:#e2b77a">South Dakota Golf Association</div>
+      <div style="font-family:Oswald, sans-serif;font-weight:700;font-size:84px;line-height:1;text-transform:uppercase;margin-top:6px">{{ browseTitle }}</div>
+    </div>
+    <img src="assets/sdga-logo.svg" alt="" style="width:132px;flex:none">
+  </div>
+  <img src="uploads/leather-strip.jpg" alt="" style="width:1080px;height:44px;object-fit:fill;flex:none;box-shadow:0 6px 14px rgba(0,0,0,.25);position:relative;z-index:2">
+  </sc-if>
+  <sc-if value="{{ mediaHeader }}" hint-placeholder-val="{{ true }}">
+  <div style="position:relative;height:605px;flex:none;background:#0d6b37;overflow:hidden">
+    {{ detailMedia }}
+    <div style="position:absolute;left:32px;top:32px;display:flex;gap:18px;z-index:3">
+      <div role="button" onClick="{{ backToBrowse }}" aria-label="Back" style="width:96px;height:96px;border-radius:50%;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;cursor:pointer;color:#fff">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M15 5l-7 7 7 7"></path></svg>
+      </div>
+    </div>
+  </div>
+  <img src="uploads/leather-strip.jpg" alt="" style="width:1080px;height:48px;object-fit:fill;flex:none;box-shadow:0 6px 14px rgba(0,0,0,.25);position:relative;z-index:2">
+  </sc-if>
+  <div ref="{{ detailRef }}" onScroll="{{ touch }}" style="flex:1;overflow-y:auto;padding:52px 64px 200px">
+    <div style="display:flex;gap:36px;align-items:flex-start">
+      <div style="flex:1;min-width:0">
+        <div style="font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:#2d5f3b;font-weight:600">{{ d.kicker }}</div>
+        <div style="font-family:Oswald, sans-serif;font-weight:700;font-size:96px;line-height:.98;text-transform:uppercase;margin-top:10px;text-wrap:balance">{{ d.name }}</div>
+        <sc-if value="{{ d.sub }}" hint-placeholder-val="{{ true }}"><div style="font-size:30px;margin-top:14px;color:#4a524d">{{ d.sub }}</div></sc-if>
+      </div>
+      <sc-if value="{{ d.logo }}" hint-placeholder-val="{{ false }}">
+        <div style="width:190px;height:150px;flex:none;background:#fff;border:1px solid #e2e2dd;border-radius:6px;display:flex;align-items:center;justify-content:center;padding:16px;box-sizing:border-box">
+          <div role="img" style="width:100%;height:100%;background: url({{ d.logo }}) center/contain no-repeat"></div>
+        </div>
+      </sc-if>
+    </div>
+    <sc-if value="{{ d.bio }}" hint-placeholder-val="{{ false }}">
+      <p style="font-size:30px;line-height:1.55;margin:44px 0 0;text-wrap:pretty">{{ d.bio }}</p>
+    </sc-if>
+    <sc-if value="{{ hasInfo }}" hint-placeholder-val="{{ false }}">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:34px 48px;margin-top:48px">
+        <sc-for list="{{ info }}" as="r" hint-placeholder-count="6">
+          <div>
+            <div style="font-size:20px;letter-spacing:.14em;text-transform:uppercase;color:#2d5f3b;font-weight:600">{{ r.k }}</div>
+            <div style="font-size:28px;line-height:1.4;margin-top:6px">{{ r.v }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </sc-if>
+    <sc-if value="{{ hasChamps }}" hint-placeholder-val="{{ false }}">
+      <div style="font-family:Oswald, sans-serif;font-weight:600;font-size:44px;text-transform:uppercase;margin-top:60px;padding-bottom:16px;border-bottom:2px solid #2d5f3b">{{ champsTitle }}</div>
+      <sc-for list="{{ champs }}" as="c" hint-placeholder-count="3">
+        <div style="display:flex;gap:28px;align-items:baseline;padding:18px 0;border-bottom:1px solid #dcdcd6">
+          <div style="font-family:Oswald, sans-serif;font-weight:600;font-size:34px;color:#2d5f3b;font-weight:600;width:110px;flex:none">{{ c.y }}</div>
+          <div style="font-size:28px;flex:1;display:flex;align-items:center;flex-wrap:wrap;gap:8px 16px"><span>{{ c.e }}</span><sc-if value="{{ c.hof }}" hint-placeholder-val="{{ false }}"><span style="font-size:17px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:#7a5418;border:1.5px solid #c89a5a;padding:4px 10px;border-radius:4px">Hall of Fame</span></sc-if></div>
+          <div style="font-size:24px;color:#4a524d">{{ c.r }}</div>
+        </div>
+      </sc-for>
+    </sc-if>
+    <sc-if value="{{ hasTees }}" hint-placeholder-val="{{ false }}">
+      <div style="font-family:Oswald, sans-serif;font-weight:600;font-size:44px;text-transform:uppercase;margin-top:60px;padding-bottom:16px;border-bottom:2px solid #2d5f3b">Tee Sets</div>
+      <div style="display:grid;grid-template-columns:1fr 160px 160px 160px;font-size:20px;letter-spacing:.14em;text-transform:uppercase;color:#2d5f3b;font-weight:600;padding:18px 0 8px">
+        <div>Tee</div><div>Player</div><div>Rating</div><div>Slope</div>
+      </div>
+      <sc-for list="{{ tees }}" as="t" hint-placeholder-count="4">
+        <div style="display:grid;grid-template-columns:1fr 160px 160px 160px;font-size:28px;padding:16px 0;border-bottom:1px solid #dcdcd6">
+          <div>{{ t.tee }}</div><div>{{ t.g }}</div><div>{{ t.r }}</div><div>{{ t.s }}</div>
+        </div>
+      </sc-for>
+    </sc-if>
+    <sc-if value="{{ hasGallery }}" hint-placeholder-val="{{ false }}">
+      <div style="font-family:Oswald, sans-serif;font-weight:600;font-size:44px;text-transform:uppercase;margin-top:60px;padding-bottom:16px;border-bottom:2px solid #2d5f3b">Gallery</div>
+      <div style="position:relative;margin:32px -64px 0">
+        {{ galleryStrip }}
+        <sc-if value="{{ galleryScrolls }}" hint-placeholder-val="{{ false }}">
+          <div role="button" onClick="{{ galleryNext }}" aria-label="More" style="position:absolute;right:28px;top:50%;margin-top:-36px;height:72px;padding:0 32px;border-radius:36px;background:#fff;box-shadow:0 6px 20px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:2;gap:10px;font-family:Inter, sans-serif;font-weight:600;font-size:26px;color:#1c2420"><span>Swipe</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0d6b37" stroke-width="3"><path d="M9 5l7 7-7 7"></path></svg></div>
+        </sc-if>
+      </div>
+    </sc-if>
+  </div>
+  <div style="position:absolute;left:0;right:0;bottom:0;height:150px;background:#3b2014 url(uploads/leather.jpg) center/cover;color:#fff;display:flex;align-items:stretch;box-shadow:0 -6px 16px rgba(0,0,0,.18);z-index:4">
+    <div role="button" onClick="{{ prevItem }}" style="flex:1;display:flex;align-items:center;gap:18px;padding:0 44px;cursor:pointer;min-width:0">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e2b77a" stroke-width="2.2" style="flex:none"><path d="M15 5l-7 7 7 7"></path></svg>
+      <div style="min-width:0"><div style="font-size:18px;letter-spacing:.14em;text-transform:uppercase;color:#e2b77a">Previous</div><div style="font-family:Oswald, sans-serif;font-weight:600;font-size:32px;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ prevName }}</div></div>
+    </div>
+    <div style="width:1px;background:rgba(255,255,255,.14)"></div>
+    <div role="button" onClick="{{ nextItem }}" style="flex:1;display:flex;align-items:center;justify-content:flex-end;gap:18px;padding:0 44px;cursor:pointer;text-align:right;min-width:0">
+      <div style="min-width:0"><div style="font-size:18px;letter-spacing:.14em;text-transform:uppercase;color:#e2b77a">Next</div><div style="font-family:Oswald, sans-serif;font-weight:600;font-size:32px;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ nextName }}</div></div>
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e2b77a" stroke-width="2.2" style="flex:none"><path d="M9 5l7 7-7 7"></path></svg>
+    </div>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ lbOpen }}" hint-placeholder-val="{{ false }}">
+  <div style="position:absolute;inset:0;z-index:20;background:rgba(10,6,4,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:48px">
+    <sc-if value="{{ lbIsVideo }}" hint-placeholder-val="{{ false }}"><iframe src="{{ lbSrc }}" title="Video" allow="autoplay; fullscreen" style="width:1080px;height:608px;border:0;background:#000"></iframe></sc-if>
+    <sc-if value="{{ lbIsPhoto }}" hint-placeholder-val="{{ false }}"><div role="img" style="width:1000px;height:1350px;background: url({{ lbSrc }}) center/contain no-repeat"></div></sc-if>
+    <sc-if value="{{ lbMulti }}" hint-placeholder-val="{{ false }}">
+      <div style="display:flex;align-items:center;gap:40px">
+        <div role="button" onClick="{{ lbPrev }}" aria-label="Previous" style="width:104px;height:104px;border-radius:50%;background:#fff;box-shadow:0 8px 22px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;cursor:pointer"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#1c2420" stroke-width="2"><path d="M15 5l-7 7 7 7"></path></svg></div>
+        <div style="color:#fff;font-size:28px;min-width:100px;text-align:center">{{ lbCounter }}</div>
+        <div role="button" onClick="{{ lbNext }}" aria-label="Next" style="width:104px;height:104px;border-radius:50%;background:#fff;box-shadow:0 8px 22px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;cursor:pointer"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#1c2420" stroke-width="2"><path d="M9 5l7 7-7 7"></path></svg></div>
+      </div>
+    </sc-if>
+    <div role="button" onClick="{{ closeLb }}" aria-label="Close" style="position:absolute;top:48px;right:48px;width:104px;height:104px;border-radius:50%;background:#0d6b37;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 22px rgba(0,0,0,.35)">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+    </div>
+  </div>
+</sc-if>
+
+<sc-if value="{{ showIdle }}" hint-placeholder-val="{{ false }}">
+  <div style="position:absolute;left:50%;bottom:190px;transform:translateX(-50%);z-index:10;background:#0d6b37;padding:24px 44px;border-radius:999px;font-size:28px;font-weight:500;white-space:nowrap;box-shadow:0 12px 30px rgba(0,0,0,.5)">Returning to start in {{ idleLeft }}s · tap to stay</div>
+</sc-if>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;kiosk&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;start&quot;,&quot;hof&quot;,&quot;courses&quot;,&quot;goty&quot;,&quot;champs&quot;],&quot;default&quot;:&quot;start&quot;,&quot;tsType&quot;:&quot;'start'|'hof'|'courses'|'goty'|'champs'&quot;,&quot;section&quot;:&quot;Kiosk&quot;},&quot;slideSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:3,&quot;max&quot;:20,&quot;step&quot;:1,&quot;unit&quot;:&quot;s&quot;,&quot;default&quot;:8,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Timing&quot;},&quot;videoSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:10,&quot;max&quot;:120,&quot;step&quot;:5,&quot;unit&quot;:&quot;s&quot;,&quot;default&quot;:30,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Timing&quot;},&quot;idleSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;min&quot;:20,&quot;max&quot;:300,&quot;step&quot;:10,&quot;unit&quot;:&quot;s&quot;,&quot;default&quot;:60,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Timing&quot;}}">
+class Component extends DCLogic {
+  state = { ready: !!(window.KIOSK_DATA && window.KIOSK_CHAMPS), kiosk: null, screen: 'attract', slide: 0, slideStart: Date.now(), now: Date.now(), last: Date.now(), filter: 'All', detailId: null, photo: 0, scale: 1, muted: true };
+  gridRef = React.createRef();
+  detailRef = React.createRef();
+
+  componentDidMount() {
+    const q = new URLSearchParams(location.search).get('kiosk');
+    this.locked = ['hof', 'courses', 'goty', 'champs'].includes(q);
+    const k = this.locked ? q : (this.props.kiosk ?? 'start');
+    this.setState({ kiosk: k, screen: k === 'start' ? 'start' : 'attract' });
+    this.onResize = () => { const sc = Math.min(innerWidth / 1080, innerHeight / 1920) || 0; if (sc && Math.abs(sc - this.state.scale) > 0.0005) this.setState({ scale: sc }); };
+    this.onResize();
+    addEventListener('resize', this.onResize);
+    this.onErr = e => { if (e.target && e.target.tagName === 'IMG') e.target.style.visibility = 'hidden'; };
+    document.addEventListener('error', this.onErr, true);
+    this.tick = setInterval(() => this.onTick(), 250);
+  }
+  componentWillUnmount() { clearInterval(this.tick); removeEventListener('resize', this.onResize); document.removeEventListener('error', this.onErr, true); }
+  componentDidUpdate(pp) {
+    if (!this.locked && pp.kiosk !== this.props.kiosk && this.props.kiosk) {
+      const k = this.props.kiosk;
+      this.setState({ kiosk: k, screen: k === 'start' ? 'start' : 'attract', slide: 0, slideStart: Date.now() });
+    }
+  }
+
+  onTick() {
+    this.onResize();
+    const now = Date.now(), s = this.state;
+    const patch = { now };
+    if (!s.ready && window.KIOSK_DATA && window.KIOSK_CHAMPS) patch.ready = true;
+    if (s.screen === 'attract') {
+      const slides = this.slides(s.kiosk), cur = slides[s.slide % (slides.length || 1)];
+      if (cur && slides.length > 1 && now - s.slideStart >= this.dur(cur) * 1000) { patch.slide = (s.slide + 1) % slides.length; patch.slideStart = now; }
+    } else if (s.lb) { patch.last = now;
+    } else if ((s.screen === 'browse' || s.screen === 'detail') && now - s.last >= this.idleSec() * 1000) {
+      this.goAttract(); return;
+    }
+    this.setState(patch);
+  }
+  idleSec() { return this.props.idleSeconds ?? 60; }
+  dur(it) { return it.video ? (this.props.videoSeconds ?? 30) : (this.props.slideSeconds ?? 8); }
+  touch = () => { this.lastT = Date.now(); if (Date.now() - this.state.last > 400) this.setState({ last: Date.now() }); };
+
+  items(k) {
+    this.cache = this.cache || {};
+    if (this.cache[k]) return this.cache[k];
+    const D = window.KIOSK_DATA; if (!D) return [];
+    const last = n => n.replace(/,?\s*(Sr\.|Jr\.|III|II)$/, '').trim().split(' ').pop();
+    let out = [];
+    if (k === 'hof') out = D.hof.map(x => ({ id: x.slug, name: x.name, sub: x.city, attractSub: x.city, kicker: 'Class of ' + x.year, year: +x.year, group: Math.floor(x.year / 10) * 10 + 's', photos: x.photos, video: (x.videos || []).length ? x.videos[0] : '', videos: x.videos || [], bio: x.bio, champs: x.champs, sort: String(x.order ?? 999).padStart(4, '0') }));
+    if (k === 'courses') out = D.courses.filter(x => !/junior tour/i.test(x.name)).map(x => ({ id: x.slug, name: x.name, sub: x.city, attractSub: x.city, kicker: x.region, group: (x.region || '').split(' · ')[0], photos: x.photos, video: '', bio: x.desc, logo: x.logo, course: x, sort: x.name.replace(/^The /, '') }));
+    if (k === 'goty') out = D.goty.map((x, i) => ({ id: x.slug, name: x.name, sub: x.city, attractSub: x.award + ' • ' + x.city, kicker: x.award, photos: x.photos, video: '', bio: x.bio, sort: String(i).padStart(2, '0') }));
+    if (k === 'champs') {
+      const norm = n => n.toLowerCase().replace(/[^a-z ]/g, '').replace(/\s+/g, ' ').trim();
+      const hofN = new Set(D.hof.map(x => norm(x.name)));
+      out = (window.KIOSK_CHAMPS || []).map((c, i) => {
+        const rows = c.rows.slice().reverse().map(r => ({ y: r[0], e: r[1], r: r[2] || '', hof: hofN.has(norm(r[1])) }));
+        const latest = rows.find(r => !/canceled/i.test(r.e)) || rows[0];
+        const first = c.rows[0][0];
+        return { id: 'ch' + i, name: c.n + ' Championship', full: c.n + ' Championship', sub: latest.y + ' · ' + latest.e, attractSub: 'Champions since ' + first, kicker: c.g, group: c.g, photos: [], video: '', videos: [], champs: rows, latest, first, sort: String(i).padStart(3, '0') };
+      });
+    }
+    out.sort((a, b) => a.sort.localeCompare(b.sort));
+    return (this.cache[k] = out);
+  }
+  slides(k) {
+    this.sCache = this.sCache || {};
+    if (this.sCache[k]) return this.sCache[k];
+    const all = this.items(k); if (!all.length) return [];
+    const withMedia = k === 'champs' ? all : all.filter(x => x.video || x.photos.length);
+    const rest = withMedia.slice();
+    for (let i = rest.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [rest[i], rest[j]] = [rest[j], rest[i]]; }
+    return (this.sCache[k] = rest);
+  }
+
+  champMedia(it, animate, key) {
+    const h = React.createElement, L = it.latest;
+    return h('div', { key, style: { position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '0 80px', textShadow: '0 2px 12px rgba(0,0,0,.45)', animation: animate ? 'kfade 1s ease both' : 'none' } },
+      h('div', { style: { fontSize: 28, letterSpacing: '.18em', textTransform: 'uppercase', color: '#e2b77a', fontWeight: 600 } }, L.y + ' Champion'),
+      h('div', { style: { fontFamily: 'Oswald, sans-serif', fontWeight: 700, fontSize: 92, lineHeight: 1.02, textTransform: 'uppercase', marginTop: 18, textWrap: 'balance' } }, L.e),
+      h('div', { style: { fontSize: 32, marginTop: 20 } }, it.name));
+  }
+  champBg(src, key, animate, zoomSec) {
+    const h = React.createElement;
+    return h('img', { key, src, alt: '', style: { position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', animation: animate ? 'kfade 1.2s ease both, kzoom ' + zoomSec + 's linear both' : 'none' } });
+  }
+  vSound(f, on) { if (!f || !f.contentWindow) return; const p = m => f.contentWindow.postMessage(JSON.stringify(m), '*'); p({ method: 'setMuted', value: !on }); p({ method: 'setVolume', value: on ? 1 : 0 }); }
+  vurl(id, bg) { const sep = id.includes('?') ? '&' : '?'; return 'https://player.vimeo.com/video/' + id + sep + (bg ? 'background=1&muted=1&autoplay=1&loop=1' : 'autoplay=1&title=0&byline=0&portrait=0'); }
+  media(it, idx, animate, key, playable) {
+    const h = React.createElement, k = this.state.kiosk;
+    const vs = it.videos || [];
+    let inner;
+    if (playable && idx < vs.length) {
+      const id = vs[idx];
+      inner = [h('iframe', { key: 'v', src: this.vurl(id, true), allow: 'autoplay', title: it.name, style: { position: 'absolute', left: 0, top: '50%', width: 1080, height: 608, transform: 'translateY(-50%)', border: 0, pointerEvents: 'none' } }),
+        h('div', { key: 'p', role: 'button', onClick: () => { const g = { kind: 'video', src: id }; this.setState({ lb: g, lbList: [g], lbIdx: 0, last: Date.now() }); }, style: { position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', background: 'rgba(0,0,0,.25)' } },
+          h('div', { style: { width: 150, height: 150, borderRadius: '50%', background: 'rgba(13,107,55,.92)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 12px 40px rgba(0,0,0,.45)' } },
+            h('svg', { width: 64, height: 64, viewBox: '0 0 24 24' }, h('path', { d: 'M8 5v14l11-7z', fill: '#fff' }))))];
+    } else if (!playable && it.video && idx === 0) {
+      const um = !this.state.muted;
+      inner = [h('iframe', { key: 'v', src: this.vurl(vs[0], true), allow: 'autoplay; fullscreen', title: it.name, onLoad: e => { const f = e.target; if (!this.state.muted) [600, 1500].forEach(t => setTimeout(() => this.vSound(f, true), t)); }, style: { position: 'absolute', left: 0, top: '50%', width: 1080, height: 608, transform: 'translateY(-50%)', border: 0, pointerEvents: 'none' } }),
+        h('div', { key: 'm', role: 'button', 'aria-label': um ? 'Mute' : 'Unmute', onPointerDown: e => e.stopPropagation(), onTouchStart: e => e.stopPropagation(), onClick: e => { e.stopPropagation(); const f = e.currentTarget.parentNode.querySelector('iframe'); const on = this.state.muted; this.vSound(f, on); this.setState({ muted: !on, last: Date.now() }); }, style: { position: 'absolute', right: 36, bottom: 28, width: 80, height: 80, background: 'rgba(255,255,255,.28)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', zIndex: 5 } },
+          h('svg', { width: 46, height: 46, viewBox: '0 0 24 24', fill: 'none', stroke: '#fff', strokeWidth: 2 }, h('path', { d: 'M4 9v6h4l5 4V5L8 9H4z', fill: '#fff' }), um ? h('path', { d: 'M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12' }) : h('path', { d: 'M16 9l5 6M21 9l-5 6' })))];
+    } else {
+      const src = it.photos[playable ? idx - vs.length : idx];
+      if (!src) inner = h('img', { src: 'assets/sdga-logo.svg', alt: '', style: { width: 260, opacity: .9 } });
+      else if (k === 'courses') inner = h('img', { src, alt: '', onError: this.imgErr, style: { width: '100%', height: '100%', objectFit: 'cover', animation: animate ? 'kzoom 10s linear both' : 'none' } });
+      else inner = h('img', { src, alt: '', onError: this.imgErr, style: { height: '100%', width: 'auto', maxWidth: '100%', objectFit: 'cover', objectPosition: 'center 20%', boxShadow: '0 0 60px rgba(0,0,0,.35)' } });
+    }
+    return h('div', { key, style: { position: 'absolute', inset: 0, background: '#0d6b37', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', animation: animate ? 'kfade 1s ease both' : 'none' } }, inner);
+  }
+  galRef = React.createRef();
+  imgErr = e => { e.target.style.visibility = 'hidden'; };
+
+  yearRef = React.createRef();
+  goAttract = () => this.setState({ champView: 'event', champYear: null, yearOpen: false, lb: null, screen: this.state.kiosk === 'start' ? 'start' : 'attract', detailId: null, filter: 'All', query: '', kb: false, slideStart: Date.now() });
+  goStart = () => this.setState({ kiosk: 'start', screen: 'start' });
+  enterBrowse = () => { this.setState({ screen: 'browse', filter: 'All', query: '', kb: false, last: Date.now() }); };
+  openItem = id => { this.setState({ screen: 'detail', detailId: id, photo: 0, last: Date.now() }); if (this.detailRef.current) this.detailRef.current.scrollTop = 0; };
+  backToBrowse = () => this.setState({ screen: 'browse', detailId: null });
+
+  renderVals() {
+    const s = this.state, k = s.kiosk;
+    const lbV = s.lb && s.lb.kind === 'video';
+    const lbL = s.lbList || [], lbN = lbL.length;
+    const lbGo = d => () => { const ni = ((s.lbIdx || 0) + d + lbN) % lbN; this.setState({ lbIdx: ni, lb: lbL[ni], last: Date.now() }); };
+    const base = { lbMulti: !!s.lb && lbN > 1, lbPrev: lbGo(-1), lbNext: lbGo(1), lbCounter: ((s.lbIdx || 0) + 1) + ' / ' + lbN, lbOpen: !!s.lb, lbIsVideo: !!lbV, lbIsPhoto: !!s.lb && !lbV, lbSrc: s.lb ? (lbV ? this.vurl(s.lb.src, false) : s.lb.src) : '', closeLb: () => this.setState({ lb: null, lbList: null, last: Date.now() }), stageTransform: 'scale(' + s.scale + ')', touch: this.touch, imgErr: this.imgErr, goAttract: this.goAttract, goStart: this.goStart, enterBrowse: this.enterBrowse, backToBrowse: this.backToBrowse,
+      isStart: s.screen === 'start', isAttract: s.screen === 'attract' && !!k && k !== 'start', isBrowse: s.screen === 'browse', isDetail: s.screen === 'detail',
+      isHof: k === 'hof', isCourses: k === 'courses', isGoty: k === 'goty', isChampsK: k === 'champs', showAllChip: !this.locked, gridRef: this.gridRef, detailRef: this.detailRef,
+      ctaLabel: { hof: 'View Members', courses: 'View Courses', goty: 'View Players', champs: 'View Championships' }[k] || '',
+      browseTitle: { hof: 'Hall of Fame', courses: 'Courses', goty: 'Golfers of the Year', champs: 'Champions' }[k] || '' };
+    if (!s.ready) return { ...base, slide: {}, cards: [], chips: [], startTiles: [], info: [], champs: [], tees: [], d: {} };
+
+    const pick = kk => () => this.setState({ kiosk: kk, screen: 'attract', slide: 0, slideStart: Date.now() });
+    const firstImg = kk => { const sl = this.slides(kk).find(x => x.photos.length); return sl ? sl.photos[0] : ''; };
+    base.startTiles = [
+      { key: 'hof', title: 'Hall of Fame', cta: 'View Members', open: pick('hof') },
+      { key: 'courses', title: 'Course Directory', cta: 'View Courses', open: pick('courses') },
+      { key: 'champs', title: 'Championship Winners', cta: 'View Players', open: pick('champs') },
+      { key: 'goty', title: 'Golfers of the Year', cta: 'View Players', open: pick('goty') }];
+    if (!this.startPool) { const pool = (window.CHAMPS_BG || []).slice(); for (let i = pool.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [pool[i], pool[j]] = [pool[j], pool[i]]; } this.startPool = pool.length ? pool : ['assets/courses-hero.jpg']; this.startT0 = Date.now(); }
+    if (s.screen === 'start') {
+      const P = this.startPool, si2 = Math.floor((s.now - this.startT0) / 20000), cs = P[si2 % P.length], ps = P[(si2 - 1 + P.length) % P.length], ns = P[(si2 + 1) % P.length], H = React.createElement;
+      const lay = (src, key, anim) => H('img', { key, src, alt: '', onError: this.imgErr, style: { position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', animation: anim ? 'kfade 1.2s ease both, kzoom 20s linear both' : 'none' } });
+      base.startMedia = H('div', { style: { position: 'absolute', inset: 0 } }, [si2 > 0 && P.length > 1 ? lay(ps, 'p' + (si2 - 1), false) : null, lay(cs, 'c' + si2, true), H('img', { key: 'n', src: ns, alt: '', style: { display: 'none' } })]);
+    }
+    if (!k || k === 'start') return { ...base, slide: {}, cards: [], chips: [], info: [], champs: [], tees: [], d: {} };
+
+    const all = this.items(k), slides = this.slides(k);
+    const n = slides.length || 1, si = s.slide % n, cur = slides[si], prev = slides[(si - 1 + n) % n], next = slides[(si + 1) % n];
+    const layers = [];
+    if (k === 'champs') {
+      const bgs = window.CHAMPS_BG || [], every = window.CHAMPS_BG_EVERY || 4, nb = bgs.length;
+      if (nb) {
+        const blk = Math.floor(s.slide / every), bi = blk % nb, zoom = every * (this.props.slideSeconds ?? 8) + 2;
+        if (nb > 1 && s.slide % every === 0 && s.slide > 0 && s.now - s.slideStart < 1400) layers.push(this.champBg(bgs[(bi - 1 + nb) % nb], 'bg' + (blk - 1), true, zoom));
+        layers.push(this.champBg(bgs[bi], 'bg' + blk, true, zoom));
+        layers.push(React.createElement('div', { key: 'ov', style: { position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at center, rgba(10,20,12,.62) 0%, rgba(10,20,12,.5) 60%, rgba(10,20,12,.7) 100%)' } }));
+      }
+      if (cur) layers.push(this.champMedia(cur, true, cur.id));
+    } else {
+      if (prev && prev !== cur && s.now - s.slideStart < 1200) layers.push(this.media(prev, 0, false, prev.id));
+      if (cur) layers.push(this.media(cur, 0, true, cur.id));
+    }
+    if (next && next.photos[0]) layers.push(React.createElement('img', { key: 'pre', src: next.photos[0], alt: '', style: { display: 'none' } }));
+    const attractMedia = React.createElement('div', { style: { position: 'absolute', inset: 0 } }, layers);
+    const slidePct = cur && slides.length > 1 ? Math.min(100, (s.now - s.slideStart) / (this.dur(cur) * 10)) : 0;
+
+    const gs = Array.from(new Set(all.map(x => x.group).filter(Boolean)));
+    const groups = k === 'goty' ? [] : ['All', ...(k === 'champs' ? gs : gs.sort((a, b) => k === 'hof' ? b.localeCompare(a) : a.localeCompare(b)))];
+    const shown = s.filter === 'All' ? all : all.filter(x => x.group === s.filter);
+    const q = k === 'hof' ? (s.query || '').trim().toLowerCase() : '';
+    const list = q ? shown.filter(x => (x.name + ' ' + (x.sub || '')).toLowerCase().includes(q)) : shown;
+    const setQ = v => { this.setState({ query: v, last: Date.now() }); if (this.gridRef.current) this.gridRef.current.scrollTop = 0; };
+    const kbRows = ['QWERTYUIOP', 'ASDFGHJKL', 'ZXCVBNM'].map(r => ({ keys: r.split('').map(ch => ({ label: ch, press: () => setQ((this.state.query || '') + ch.toLowerCase()) })) }));
+    Object.assign(base, { showSearch: k === 'hof', query: s.query || '', hasQuery: !!s.query, kbOpen: k === 'hof' && !!s.kb,
+      searchText: s.query ? s.query : 'Search members by name or town', searchColor: s.query ? '#1c2420' : '#8a908c', searchBorder: s.kb ? '#0d6b37' : '#d4d4ce',
+      noResults: !!q && !list.length, kbRows,
+      openKb: () => this.setState({ kb: true, last: Date.now() }), closeKb: () => this.setState({ kb: false, last: Date.now() }),
+      clearQuery: e => { e && e.stopPropagation(); setQ(''); },
+      kbBack: () => setQ((this.state.query || '').slice(0, -1)), kbSpace: () => setQ((this.state.query || '') + ' ') });
+    const chips = groups.map(g => ({ label: g, bg: g === s.filter ? '#0d6b37' : '#fff', color: g === s.filter ? '#fff' : '#1c2420', border: g === s.filter ? '#0d6b37' : '#d4d4ce', pick: () => { this.setState({ filter: g }); if (this.gridRef.current) this.gridRef.current.scrollTop = 0; } }));
+    const yearView = k === 'champs' && s.champView === 'year';
+    const CH = window.KIOSK_CHAMPS || [];
+    const years = Array.from(new Set(CH.flatMap(c => c.rows.map(r => String(r[0]).slice(0, 4))).filter(y => /^\d{4}$/.test(y)))).sort((a, b) => b - a);
+    const yr = s.champYear || years[0];
+    const yRows = list.map(x => { const c = CH[+x.id.slice(2)]; const r = c && c.rows.find(r => String(r[0]).slice(0, 4) === yr && !/canceled/i.test(r[1])); return r ? { group: x.group, event: x.name.replace(/ Championship$/, ''), winner: r[1], city: r[2] || '', open: () => this.openItem(x.id) } : null; }).filter(Boolean);
+    const yGroupNames = Array.from(new Set(yRows.map(r => r.group)));
+    const scrollTop = () => { if (this.gridRef.current) this.gridRef.current.scrollTop = 0; };
+    Object.assign(base, { isChampsBrowse: k === 'champs', isYearView: yearView, yearRef: this.yearRef,
+      viewTabs: [['event', 'By Championship'], ['year', 'By Year']].map(([v, label]) => { const on = (s.champView || 'event') === v; return { label, bg: on ? '#0d6b37' : 'transparent', color: on ? '#fff' : '#1c2420', shadow: on ? '0 4px 10px rgba(13,107,55,.3)' : 'none', pick: () => { this.setState({ champView: v, last: Date.now() }); scrollTop(); } }; }),
+      yearOpen: !!s.yearOpen, yearLabel: yr, yearCaret: s.yearOpen ? '▲' : '▼',
+      yearToggle: () => this.setState({ yearOpen: !s.yearOpen, last: Date.now() }),
+      yearDecades: Array.from(new Set(years.map(y => y.slice(0, 3)))).map(d => ({ label: d + '0s', years: years.filter(y => y.slice(0, 3) === d).map(y => { const on = y === yr; return { label: y, bg: on ? '#0d6b37' : '#fff', color: on ? '#fff' : '#1c2420', border: on ? '#0d6b37' : '#d4d4ce', pick: () => { this.setState({ champYear: y, yearOpen: false, last: Date.now() }); scrollTop(); } }; }) })),
+      yearGroups: yearView ? yGroupNames.map(g => ({ label: g, rows: yRows.filter(r => r.group === g) })) : [] });
+    const cards = yearView ? [] : list.map(x => ({ id: x.id, name: x.name, sub: k === 'champs' ? '' : x.sub, kicker: k === 'champs' ? '' : x.kicker, photo: x.photos[0] || '', noPhoto: !x.photos.length, showMedia: k !== 'champs', video: !!x.video, aspect: k === 'courses' ? '4 / 3' : '4 / 5', open: () => this.openItem(x.id) }));
+    const unit = { hof: ['member', 'members'], courses: ['course', 'courses'], goty: ['golfer', 'golfers'], champs: ['championship', 'championships'] }[k];
+    const countLabel = yearView ? (yr + ' Champions · ' + yRows.length + ' ' + (yRows.length === 1 ? 'championship' : 'championships') + (s.filter === 'All' ? '' : ' · ' + s.filter)) : k === 'goty' ? (window.KIOSK_DATA.year + ' SDGA Golfers of the Year') : list.length + ' ' + (list.length === 1 ? unit[0] : unit[1]) + (s.filter === 'All' ? '' : ' · ' + s.filter);
+
+    let dv = { d: {}, info: [], champs: [], tees: [], hasInfo: false, hasChamps: false, hasTees: false, hasGallery: false };
+    if (s.screen === 'detail' && s.detailId) {
+      const idx = Math.max(0, list.findIndex(x => x.id === s.detailId));
+      const it = list[idx] || all.find(x => x.id === s.detailId);
+      const total = it.photos.length + (it.videos || []).length;
+      const p = ((s.photo % (total || 1)) + (total || 1)) % (total || 1);
+      const c = it.course;
+      const info = c ? [['Address', c.address], ['Phone', c.phone], ['Par', c.par], ['Guest fees', c.guest], ['Cart fees', c.cart], ['Head professional', c.pro], ['Superintendent', c.supt], ['Website', (c.website || '').replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')]].filter(r => r[1] && r[1].trim()).map(([k2, v]) => ({ k: k2, v })) : [];
+      const seen = new Set();
+      const tees = c ? c.tees.filter(t => { const key = t.g + t.tee.toLowerCase() + t.r; if (seen.has(key)) return false; seen.add(key); return true; }).map(t => ({ ...t, g: t.g === 'W' ? 'Women' : 'Men' })) : [];
+      const pv = list[(idx - 1 + list.length) % list.length], nx = list[(idx + 1) % list.length];
+      const hasVid = k !== 'champs' && (it.videos || []).length > 0;
+      const gItems = hasVid ? [...it.videos.slice(1).map(v => ({ kind: 'video', src: v })), ...it.photos.map(p => ({ kind: 'photo', src: p }))] : it.photos.slice(1).map(p => ({ kind: 'photo', src: p }));
+      const H = React.createElement, TH = 400;
+      const galleryStrip = H('div', { ref: this.galRef, onScroll: this.touch, style: { display: 'flex', gap: 16, overflowX: 'auto', padding: '0 64px', scrollBehavior: 'smooth' } },
+        gItems.map((g, gi) => H('div', { key: gi, role: 'button', onClick: () => this.setState({ lb: g, lbList: gItems, lbIdx: gi, last: Date.now() }), style: { position: 'relative', flex: 'none', height: TH, borderRadius: 20, overflow: 'hidden', cursor: 'pointer', background: '#0d6b37', minWidth: g.kind === 'video' ? 711 : 0 } },
+          g.kind === 'video'
+            ? [H('div', { key: 't', style: { position: 'absolute', inset: 0, background: 'url(https://vumbnail.com/' + g.src.split('?')[0] + '.jpg) center/cover' } }),
+               H('div', { key: 'p', style: { position: 'absolute', left: '50%', top: '50%', width: 120, height: 120, margin: '-60px 0 0 -60px', borderRadius: '50%', background: 'rgba(255,255,255,.95)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 6px 20px rgba(0,0,0,.3)' } },
+                 H('svg', { width: 44, height: 44, viewBox: '0 0 24 24' }, H('path', { d: 'M8 5v14l11-7z', fill: '#1c2420' })))]
+            : H('img', { src: g.src, alt: '', onError: this.imgErr, style: { display: 'block', height: TH, width: 'auto' } }))));
+      dv = { galleryStrip, hasGallery: gItems.length > 0, galleryScrolls: gItems.length > 1, galleryNext: () => { const el = this.galRef.current; if (el) el.scrollLeft += 600; this.touch(); }, champsTitle: k === 'champs' ? 'Past Champions' : 'SDGA Championships', champHeader: k === 'champs', mediaHeader: k !== 'champs', d: { name: it.full || it.name, kicker: it.kicker, sub: k === 'champs' ? '' : it.sub, bio: it.bio || '', logo: it.logo || '' },
+        detailMedia: k === 'champs' ? null : (hasVid ? this.media({ ...it, video: it.videos[0] }, 0, false, it.id + '-hero-v') : this.media({ ...it, video: '', videos: [] }, 0, true, it.id + '-hero')),
+        prevPhoto: () => this.setState({ photo: p - 1 }), nextPhoto: () => this.setState({ photo: p + 1 }),
+        info, hasInfo: info.length > 0, champs: it.champs || [], hasChamps: !!(it.champs && it.champs.length), tees, hasTees: tees.length > 0,
+        prevName: pv.name, nextName: nx.name, prevItem: () => this.openItem(pv.id), nextItem: () => this.openItem(nx.id) };
+    }
+    const idleLeft = Math.ceil(this.idleSec() - (s.now - s.last) / 1000);
+    return { ...base, showSlideText: k !== 'champs', attractMedia, slidePct, slide: cur ? { name: cur.name, sub: cur.attractSub } : { name: '', sub: '' },
+      chips, hasChips: chips.length > 0, cards, countLabel, gridCols: k === 'goty' || k === 'champs' ? '1fr 1fr' : '1fr 1fr 1fr', cardNameSize: k === 'goty' || k === 'champs' ? 40 : 32,
+      showIdle: (s.screen === 'browse' || s.screen === 'detail') && idleLeft <= 10 && idleLeft > 0, idleLeft, ...dv };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,472 @@
+type,name,slug,role,attachment_id,filename,source_url
+hall_of_fame,Al Cooke,al-cooke,gallery,10480,AlCooke.jpg,https://www.sdga.org/wp-content/uploads/2022/04/AlCooke.jpg
+hall_of_fame,Alice Bauer,alice-bauer,gallery,10458,AliceBauer.jpg,https://www.sdga.org/wp-content/uploads/2022/04/AliceBauer.jpg
+hall_of_fame,Anne Borgmann,anne-borgmann,gallery,10324,AnneBorgmann.jpg,https://www.sdga.org/wp-content/uploads/2022/04/AnneBorgmann.jpg
+hall_of_fame,Barbara Krumm Spears,barbara-krumm-spears,gallery,18396,Barbara-Krumm-Spears-1.jpeg,https://www.sdga.org/wp-content/uploads/2025/08/Barbara-Krumm-Spears-1.jpeg
+hall_of_fame,Barbara Krumm Spears,barbara-krumm-spears,gallery,18397,Barbara-Krumm.jpg,https://www.sdga.org/wp-content/uploads/2025/08/Barbara-Krumm.jpg
+hall_of_fame,Barbara Krumm Spears,barbara-krumm-spears,gallery,21624,HOF-Display_16.jpg,https://www.sdga.org/wp-content/uploads/2025/08/HOF-Display_16.jpg
+hall_of_fame,Barbara Krumm Spears,barbara-krumm-spears,gallery,21625,HOF-Display_13.jpg,https://www.sdga.org/wp-content/uploads/2025/08/HOF-Display_13.jpg
+hall_of_fame,Barbara Krumm Spears,barbara-krumm-spears,gallery,21626,HOF-Display_6.jpg,https://www.sdga.org/wp-content/uploads/2025/08/HOF-Display_6.jpg
+hall_of_fame,Barbara Krumm Spears,barbara-krumm-spears,gallery,21627,Article1.jpg,https://www.sdga.org/wp-content/uploads/2025/08/Article1.jpg
+hall_of_fame,Becky Larson Pessolano,becky-larson-pessolano,gallery,10489,BeckyLarsonPessolano.jpg,https://www.sdga.org/wp-content/uploads/2022/04/BeckyLarsonPessolano.jpg
+hall_of_fame,Bert Olson,bert-olson,gallery,15507,Bert-O-Headshot.jpg,https://www.sdga.org/wp-content/uploads/2024/07/Bert-O-Headshot.jpg
+hall_of_fame,Bob Masson,bob-masson,gallery,10386,BobMasson.jpg,https://www.sdga.org/wp-content/uploads/2022/04/BobMasson.jpg
+hall_of_fame,Byron Comstock,byron-comstock,gallery,10636,Byron-Comstock-Cropped.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Byron-Comstock-Cropped.jpg
+hall_of_fame,C. Irvin Krumm,c-irvin-krumm,gallery,10228,CIrvinKrumm.jpg,https://www.sdga.org/wp-content/uploads/2022/04/CIrvinKrumm.jpg
+hall_of_fame,Charles Howard,charles-howard,gallery,17747,Charles-Howard-Obit-Pic.jpeg,https://www.sdga.org/wp-content/uploads/2022/04/Charles-Howard-Obit-Pic.jpeg
+hall_of_fame,Chris Long,chris-long,gallery,15504,Chirs-L.jpg,https://www.sdga.org/wp-content/uploads/2024/07/Chirs-L.jpg
+hall_of_fame,Coralee Jorgensen,coralee-jorgensen,gallery,10467,CoraleeJorgensen.jpg,https://www.sdga.org/wp-content/uploads/2022/04/CoraleeJorgensen.jpg
+hall_of_fame,Curt Byrum,curt-byrum,gallery,10424,CurtByrum.jpg,https://www.sdga.org/wp-content/uploads/2022/04/CurtByrum.jpg
+hall_of_fame,Dave Austad,dave-austad,gallery,12657,Dave-Austad-Head-Shot.jpg,https://www.sdga.org/wp-content/uploads/2023/06/Dave-Austad-Head-Shot.jpg
+hall_of_fame,Dave Hanten,dave-hanten,gallery,10337,DaveHanten.jpg,https://www.sdga.org/wp-content/uploads/2022/04/DaveHanten.jpg
+hall_of_fame,Dean Heymans,dean-heymans,gallery,10647,Dean-Heymans-Pic.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Dean-Heymans-Pic.jpg
+hall_of_fame,Dean Shortridge,dean-shortridge,gallery,10333,DeanShortridge.jpg,https://www.sdga.org/wp-content/uploads/2022/04/DeanShortridge.jpg
+hall_of_fame,Dean Zahn,dean-zahn,gallery,15801,Dean_DSC_1199-1.jpg,https://www.sdga.org/wp-content/uploads/2024/11/Dean_DSC_1199-1.jpg
+hall_of_fame,Derek Burshiem,derek-burshiem,gallery,10985,DerekB-Cropped.jpg,https://www.sdga.org/wp-content/uploads/2022/08/DerekB-Cropped.jpg
+hall_of_fame,Don Platt,don-platt,gallery,10259,DonPlatt.jpg,https://www.sdga.org/wp-content/uploads/2022/04/DonPlatt.jpg
+hall_of_fame,Doris Mernaugh,doris-mernaugh,gallery,10462,DorisMernaugh.jpg,https://www.sdga.org/wp-content/uploads/2022/04/DorisMernaugh.jpg
+hall_of_fame,Doug Murphy,doug-murphy,gallery,15509,Doug-M-HeadShot.jpg,https://www.sdga.org/wp-content/uploads/2024/07/Doug-M-HeadShot.jpg
+hall_of_fame,Ed Livingston,ed-livingston,gallery,10196,10266-thumb-230x291-1.jpg,https://www.sdga.org/wp-content/uploads/2022/04/10266-thumb-230x291-1.jpg
+hall_of_fame,"Ev Comstock, Sr.",ev-comstock-sr,gallery,10192,10267-thumb-230x291-1.jpg,https://www.sdga.org/wp-content/uploads/2022/04/10267-thumb-230x291-1.jpg
+hall_of_fame,Gary Wiren,gary-wiren,gallery,10263,GaryWiren.jpg,https://www.sdga.org/wp-content/uploads/2022/04/GaryWiren.jpg
+hall_of_fame,Gene Reiter,gene-reiter,gallery,10267,GeneReiter.jpg,https://www.sdga.org/wp-content/uploads/2022/04/GeneReiter.jpg
+hall_of_fame,George Meyers,george-meyers,gallery,10312,GeorgeMeyers.jpg,https://www.sdga.org/wp-content/uploads/2022/04/GeorgeMeyers.jpg
+hall_of_fame,Gretchen Idema Hughes,gretchen-idema-hughes,gallery,22800,Gretchen-Headshot.jpg,https://www.sdga.org/wp-content/uploads/2026/06/Gretchen-Headshot.jpg
+hall_of_fame,Gretchen Idema Hughes,gretchen-idema-hughes,gallery,22799,Gretchen-Golf-Shot.jpg,https://www.sdga.org/wp-content/uploads/2026/06/Gretchen-Golf-Shot.jpg
+hall_of_fame,Hobe Richards,hobe-richards,gallery,10251,HobeRichards.jpg,https://www.sdga.org/wp-content/uploads/2022/04/HobeRichards.jpg
+hall_of_fame,Ila Michael,ila-michael,gallery,10285,IlaMichael.jpg,https://www.sdga.org/wp-content/uploads/2022/04/IlaMichael.jpg
+hall_of_fame,Indy Titterington,indy-titterington,gallery,10255,IndyTitterington.jpg,https://www.sdga.org/wp-content/uploads/2022/04/IndyTitterington.jpg
+hall_of_fame,Ivan Steen,ivan-steen,gallery,10290,IvanSteen.jpg,https://www.sdga.org/wp-content/uploads/2022/04/IvanSteen.jpg
+hall_of_fame,Jack Davenport,jack-davenport,gallery,10342,JackDavenport.jpg,https://www.sdga.org/wp-content/uploads/2022/04/JackDavenport.jpg
+hall_of_fame,Jane Egan Noble,jane-egan-noble,gallery,425,IMG-0044-crop-544x488-10073-thumb-230x291-1.jpg,https://www.sdga.org/wp-content/uploads/2021/09/IMG-0044-crop-544x488-10073-thumb-230x291-1.jpg
+hall_of_fame,Jason Young,jason-young,gallery,18393,Jason-Young-Headshot-1.jpeg,https://www.sdga.org/wp-content/uploads/2025/08/Jason-Young-Headshot-1.jpeg
+hall_of_fame,Jay and Jane Huizenga,jay-and-jane-huizenga,gallery,22894,Jay-and-Jane-Adjusted.png,https://www.sdga.org/wp-content/uploads/2026/07/Jay-and-Jane-Adjusted.png
+hall_of_fame,Jay and Jane Huizenga,jay-and-jane-huizenga,gallery,22892,Jay.jpeg,https://www.sdga.org/wp-content/uploads/2026/07/Jay.jpeg
+hall_of_fame,Jay and Jane Huizenga,jay-and-jane-huizenga,gallery,22891,Jane.jpeg,https://www.sdga.org/wp-content/uploads/2026/07/Jane.jpeg
+hall_of_fame,Jeri Krsnak,jeri-krsnak,gallery,10640,Jeri-Krsnak-Pic.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Jeri-Krsnak-Pic.jpg
+hall_of_fame,Jim Ahern,jim-ahern,gallery,10345,JimAhern.jpg,https://www.sdga.org/wp-content/uploads/2022/04/JimAhern.jpg
+hall_of_fame,Jim Entwisle,jim-entwisle,gallery,10445,JimEntwisle.jpg,https://www.sdga.org/wp-content/uploads/2022/04/JimEntwisle.jpg
+hall_of_fame,John DeRudder,john-derudder,gallery,10277,JohnDeRudder.jpg,https://www.sdga.org/wp-content/uploads/2022/04/JohnDeRudder.jpg
+hall_of_fame,John Derby,john-derby,gallery,10328,JohnDerby.jpg,https://www.sdga.org/wp-content/uploads/2022/04/JohnDerby.jpg
+hall_of_fame,John Rachetto,john-rachetto,gallery,10182,10120-thumb-230x291-1.jpg,https://www.sdga.org/wp-content/uploads/2022/04/10120-thumb-230x291-1.jpg
+hall_of_fame,Julie Jansa,julie-jansa,gallery,12659,Julie-Jansa-Head-Shot.jpg,https://www.sdga.org/wp-content/uploads/2023/06/Julie-Jansa-Head-Shot.jpg
+hall_of_fame,Kathy Kober,kathy-kober,gallery,10375,KathyKober.jpg,https://www.sdga.org/wp-content/uploads/2022/04/KathyKober.jpg
+hall_of_fame,Kevin Buntrock,kevin-buntrock,gallery,10981,Kevin_Buntrock-Cropped.jpg,https://www.sdga.org/wp-content/uploads/2022/08/Kevin_Buntrock-Cropped.jpg
+hall_of_fame,Kris Tschetter,kris-tschetter,gallery,10485,KrisTschetter.jpg,https://www.sdga.org/wp-content/uploads/2022/04/KrisTschetter.jpg
+hall_of_fame,Laddie Cimpl,laddie-cimpl,gallery,15666,Laddie_Cimpl-2.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Laddie_Cimpl-2.jpg
+hall_of_fame,Larry Gunia,larry-gunia,gallery,10983,LarryG.jpg,https://www.sdga.org/wp-content/uploads/2022/08/LarryG.jpg
+hall_of_fame,Lorne Bartling,lorne-bartling,gallery,10271,LorneBartling.jpg,https://www.sdga.org/wp-content/uploads/2022/04/LorneBartling.jpg
+hall_of_fame,Mark Amundson,mark-amundson,gallery,10402,MarkAmundson.jpg,https://www.sdga.org/wp-content/uploads/2022/04/MarkAmundson.jpg
+hall_of_fame,Marlene Bauer Hagge,marlene-bauer-hagge,gallery,10221,MarleneBauerHagge.jpg,https://www.sdga.org/wp-content/uploads/2022/04/MarleneBauerHagge.jpg
+hall_of_fame,Marv Widness,marv-widness,gallery,10371,MarvWidness.jpg,https://www.sdga.org/wp-content/uploads/2022/04/MarvWidness.jpg
+hall_of_fame,Marvin White,marvin-white,gallery,10471,MarvinWhite.jpg,https://www.sdga.org/wp-content/uploads/2022/04/MarvinWhite.jpg
+hall_of_fame,Merv Bouchie,merv-bouchie,gallery,10645,Merv-Bouchie-Pic.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Merv-Bouchie-Pic.jpg
+hall_of_fame,Mike Brummer,mike-brummer,gallery,10382,MikeBrummer.jpg,https://www.sdga.org/wp-content/uploads/2022/04/MikeBrummer.jpg
+hall_of_fame,Ottilie Doering,ottilie-doering,gallery,10245,OttilieDoering.jpg,https://www.sdga.org/wp-content/uploads/2022/04/OttilieDoering.jpg
+hall_of_fame,Pam Hoiland,pam-hoiland,gallery,10638,Pam-Hoilnad-Pic.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Pam-Hoilnad-Pic.jpg
+hall_of_fame,Pat Lockwood,pat-lockwood,gallery,10428,PatLockwood.jpg,https://www.sdga.org/wp-content/uploads/2022/04/PatLockwood.jpg
+hall_of_fame,Patsy Ehret,patsy-ehret,gallery,21353,Patsy-Ehret-Headshot.jpg,https://www.sdga.org/wp-content/uploads/2026/02/Patsy-Ehret-Headshot.jpg
+hall_of_fame,Patsy Ehret,patsy-ehret,gallery,21354,Patsy-Ehret-USGA.jpeg,https://www.sdga.org/wp-content/uploads/2026/02/Patsy-Ehret-USGA.jpeg
+hall_of_fame,Patsy Ehret,patsy-ehret,gallery,21619,HOF-Display_12.jpg,https://www.sdga.org/wp-content/uploads/2026/02/HOF-Display_12.jpg
+hall_of_fame,Patsy Ehret,patsy-ehret,gallery,21620,HOF-Display_10.jpg,https://www.sdga.org/wp-content/uploads/2026/02/HOF-Display_10.jpg
+hall_of_fame,Patsy Ehret,patsy-ehret,gallery,21621,HOF-Display_11.jpg,https://www.sdga.org/wp-content/uploads/2026/02/HOF-Display_11.jpg
+hall_of_fame,Patsy Ehret,patsy-ehret,gallery,21622,HOF-Display_5.jpg,https://www.sdga.org/wp-content/uploads/2026/02/HOF-Display_5.jpg
+hall_of_fame,Patty Coddington,patty-coddington,gallery,10441,PattyCoddington.jpg,https://www.sdga.org/wp-content/uploads/2022/04/PattyCoddington.jpg
+hall_of_fame,Paul Schock,paul-schock,gallery,10451,PaulSchock.jpg,https://www.sdga.org/wp-content/uploads/2022/04/PaulSchock.jpg
+hall_of_fame,Peggy Kirby,peggy-kirby,gallery,10379,PeggyKirby.jpg,https://www.sdga.org/wp-content/uploads/2022/04/PeggyKirby.jpg
+hall_of_fame,Phil Donohue,phil-donohue,gallery,10225,PhilDonohue.jpg,https://www.sdga.org/wp-content/uploads/2022/04/PhilDonohue.jpg
+hall_of_fame,Ralph Porter,ralph-porter,gallery,10187,10116-crop-544x488-1bdbe-thumb-230x291-1.jpg,https://www.sdga.org/wp-content/uploads/2022/04/10116-crop-544x488-1bdbe-thumb-230x291-1.jpg
+hall_of_fame,Ralph Porter,ralph-porter,gallery,22667,1930-Match-Finals.jpg,https://www.sdga.org/wp-content/uploads/1930/07/1930-Match-Finals.jpg
+hall_of_fame,Ray Laird III,ray-laird-iii,gallery,10407,RayLairdIII.jpg,https://www.sdga.org/wp-content/uploads/2022/04/RayLairdIII.jpg
+hall_of_fame,Rick Werner,rick-werner,gallery,12655,Rick-Werner-Head-Shot2.jpg,https://www.sdga.org/wp-content/uploads/2023/06/Rick-Werner-Head-Shot2.jpg
+hall_of_fame,Robert E. Marchand,robert-e-marchand,gallery,10281,RobertMarchand.jpg,https://www.sdga.org/wp-content/uploads/2022/04/RobertMarchand.jpg
+hall_of_fame,Rod Garrison,rod-garrison,gallery,10649,Rod-Garrison-Pic.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Rod-Garrison-Pic.jpg
+hall_of_fame,Roger Erickson,roger-erickson,gallery,10501,RogerErickson.jpg,https://www.sdga.org/wp-content/uploads/2022/04/RogerErickson.jpg
+hall_of_fame,Roger Legge,roger-legge,gallery,10398,RogerLegge.jpg,https://www.sdga.org/wp-content/uploads/2022/04/RogerLegge.jpg
+hall_of_fame,Roger Legge,roger-legge,gallery,21632,Legge1.jpeg,https://www.sdga.org/wp-content/uploads/2022/04/Legge1.jpeg
+hall_of_fame,Roger Legge,roger-legge,gallery,21633,Legge1Movie.mov,https://www.sdga.org/wp-content/uploads/2022/04/Legge1Movie.mov
+hall_of_fame,Roger Legge,roger-legge,gallery,21634,Legge2.jpeg,https://www.sdga.org/wp-content/uploads/2022/04/Legge2.jpeg
+hall_of_fame,Roger Legge,roger-legge,gallery,21635,Legge3.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Legge3.jpg
+hall_of_fame,Roger Legge,roger-legge,gallery,21636,Legge4.jpeg,https://www.sdga.org/wp-content/uploads/2022/04/Legge4.jpeg
+hall_of_fame,Roger Legge,roger-legge,gallery,21637,Legge5.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Legge5.jpg
+hall_of_fame,Roger Legge,roger-legge,gallery,21638,Legge6.jpeg,https://www.sdga.org/wp-content/uploads/2022/04/Legge6.jpeg
+hall_of_fame,Roger Legge,roger-legge,gallery,21639,Legge7.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Legge7.jpg
+hall_of_fame,Ruth Miller,ruth-miller,gallery,10316,RuthMiller.jpg,https://www.sdga.org/wp-content/uploads/2022/04/RuthMiller.jpg
+hall_of_fame,Ryan Jansa,ryan-jansa,gallery,12661,Ryan-Jansa-Head-Shot.jpg,https://www.sdga.org/wp-content/uploads/2023/06/Ryan-Jansa-Head-Shot.jpg
+hall_of_fame,Steve Jansa,steve-jansa,gallery,10493,SteveJansa.jpg,https://www.sdga.org/wp-content/uploads/2022/04/SteveJansa.jpg
+hall_of_fame,Steve Pelzl,steve-pelzl,gallery,10454,StevePelzl.jpg,https://www.sdga.org/wp-content/uploads/2022/04/StevePelzl.jpg
+hall_of_fame,Steve Weiland,steve-weiland,gallery,10643,Steve-Weiland-Pic.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Steve-Weiland-Pic.jpg
+hall_of_fame,Ted Zahn,ted-zahn,gallery,22615,Dad.2.png,https://www.sdga.org/wp-content/uploads/2026/04/Dad.2.png
+hall_of_fame,Tedd Evans,tedd-evans,gallery,10651,Tedd-Evans-Pic.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Tedd-Evans-Pic.jpg
+hall_of_fame,Terry Comstock,terry-comstock,gallery,10320,TerryComstock.jpg,https://www.sdga.org/wp-content/uploads/2022/04/TerryComstock.jpg
+hall_of_fame,Terry Crouch,terry-crouch,gallery,10390,TerryCrouch.jpg,https://www.sdga.org/wp-content/uploads/2022/04/TerryCrouch.jpg
+hall_of_fame,Tom Byrum,tom-byrum,gallery,10433,TomByrum.jpg,https://www.sdga.org/wp-content/uploads/2022/04/TomByrum.jpg
+hall_of_fame,Tom Egan,tom-egan,gallery,10394,TomEgan.jpg,https://www.sdga.org/wp-content/uploads/2022/04/TomEgan.jpg
+hall_of_fame,Tom Hendricks,12670,gallery,12653,Hendricks-Head-Shot.jpg,https://www.sdga.org/wp-content/uploads/2023/06/Hendricks-Head-Shot.jpg
+hall_of_fame,Tom Jansa,tom-jansa,gallery,22805,Tom-Headshot.jpg,https://www.sdga.org/wp-content/uploads/2026/06/Tom-Headshot.jpg
+hall_of_fame,Tom Jansa,tom-jansa,gallery,22804,Tom-Family.jpg,https://www.sdga.org/wp-content/uploads/2026/06/Tom-Family.jpg
+hall_of_fame,Wade Merry,wade-merry,gallery,10505,WadeMerry.jpg,https://www.sdga.org/wp-content/uploads/2022/04/WadeMerry.jpg
+golf_course,Alcester Golf Club,alcester-golf-club,logo,15256,Alcester-Logo.png,https://www.sdga.org/wp-content/uploads/2024/04/Alcester-Logo.png
+golf_course,Alcester Golf Club,alcester-golf-club,gallery,10054,20190723_075657_Original.jpg,https://www.sdga.org/wp-content/uploads/2022/04/20190723_075657_Original.jpg
+golf_course,Alcester Golf Club,alcester-golf-club,gallery,10053,20190504_144256_Original.jpg,https://www.sdga.org/wp-content/uploads/2022/04/20190504_144256_Original.jpg
+golf_course,Alcester Golf Club,alcester-golf-club,gallery,10052,20160816_173853.jpg,https://www.sdga.org/wp-content/uploads/2022/04/20160816_173853.jpg
+golf_course,Alcester Golf Club,alcester-golf-club,gallery,10073,OPZWE3973.jpg,https://www.sdga.org/wp-content/uploads/2022/04/OPZWE3973.jpg
+golf_course,Alcester Golf Club,alcester-golf-club,gallery,10072,Morningside-Event-Center.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Morningside-Event-Center.jpg
+golf_course,Alcester Golf Club,alcester-golf-club,gallery,10071,LTXU2279.jpg,https://www.sdga.org/wp-content/uploads/2022/04/LTXU2279.jpg
+golf_course,Alcester Golf Club,alcester-golf-club,gallery,10069,IMG_2573.jpg,https://www.sdga.org/wp-content/uploads/2022/04/IMG_2573.jpg
+golf_course,Alcester Golf Club,alcester-golf-club,gallery,10065,IMG_2567.jpg,https://www.sdga.org/wp-content/uploads/2022/04/IMG_2567.jpg
+golf_course,Alcester Golf Club,alcester-golf-club,gallery,10064,IMG_2565.jpg,https://www.sdga.org/wp-content/uploads/2022/04/IMG_2565.jpg
+golf_course,Alcester Golf Club,alcester-golf-club,gallery,10061,IMG_2561.jpg,https://www.sdga.org/wp-content/uploads/2022/04/IMG_2561.jpg
+golf_course,Alcester Golf Club,alcester-golf-club,gallery,10060,IMG_2559.jpg,https://www.sdga.org/wp-content/uploads/2022/04/IMG_2559.jpg
+golf_course,Arrowhead,arrowhead,featured,1530,DSC_0081.1600x500-crop-894x488-d3a66.jpg,https://www.sdga.org/wp-content/uploads/2021/09/DSC_0081.1600x500-crop-894x488-d3a66.jpg
+golf_course,Arrowhead,arrowhead,logo,3014,newlogo.png,https://www.sdga.org/wp-content/uploads/2022/01/newlogo.png
+golf_course,Arrowhead,arrowhead,gallery,6183,arrowhead-golf-course.jpg,https://www.sdga.org/wp-content/uploads/2022/01/arrowhead-golf-course.jpg
+golf_course,Arrowhead,arrowhead,gallery,6184,arrowhead-golf-course1.jpg,https://www.sdga.org/wp-content/uploads/2022/01/arrowhead-golf-course1.jpg
+golf_course,Arrowhead,arrowhead,gallery,6185,arrowhead-golf-course2.jpg,https://www.sdga.org/wp-content/uploads/2022/01/arrowhead-golf-course2.jpg
+golf_course,Bakker Crossing Golf Course,bakker-crossing-golf-course,logo,1453,BakkerCrossing.svg,https://www.sdga.org/wp-content/uploads/2021/09/BakkerCrossing.svg
+golf_course,Bakker Crossing Golf Course,bakker-crossing-golf-course,gallery,6419,22179873_10155745700511944_391784963422786517_o.jpg,https://www.sdga.org/wp-content/uploads/2022/02/22179873_10155745700511944_391784963422786517_o.jpg
+golf_course,Belle Fourche Country Club,belle-fourche-country-club,logo,6441,Belle-Fourche-Country-Club-Logo.png,https://www.sdga.org/wp-content/uploads/2022/02/Belle-Fourche-Country-Club-Logo.png
+golf_course,Belle Fourche Country Club,belle-fourche-country-club,gallery,6436,Belle-Fourche-Country-Club1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Belle-Fourche-Country-Club1.jpg
+golf_course,Belle Fourche Country Club,belle-fourche-country-club,gallery,6437,Belle-Fourche-Country-Club2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Belle-Fourche-Country-Club2.jpg
+golf_course,Belle Fourche Country Club,belle-fourche-country-club,gallery,6438,Belle-Fourche-Country-Club3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Belle-Fourche-Country-Club3.jpg
+golf_course,Bison Country Club,bison-country-club,gallery,6445,Bison-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Bison-1.jpg
+golf_course,Bison Country Club,bison-country-club,gallery,6447,Bison-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Bison-2.jpg
+golf_course,Bon Homme Country Club,bon-homme-country-club,logo,6453,bonhomme-logo.png,https://www.sdga.org/wp-content/uploads/2022/02/bonhomme-logo.png
+golf_course,Bon Homme Country Club,bon-homme-country-club,gallery,6451,46c7127920dcdd0b2669019ce3270038-crop-894x488-d3a66.jpg,https://www.sdga.org/wp-content/uploads/2022/02/46c7127920dcdd0b2669019ce3270038-crop-894x488-d3a66.jpg
+golf_course,Bon Homme Country Club,bon-homme-country-club,gallery,6686,92228809_2718886898342591_1663097223472218112_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/92228809_2718886898342591_1663097223472218112_n.jpg
+golf_course,Boulder Canyon Golf Club,boulder-canyon-golf-club,logo,6458,Boulder-Canyon-Golf-Club-Logo.png,https://www.sdga.org/wp-content/uploads/2022/02/Boulder-Canyon-Golf-Club-Logo.png
+golf_course,Boulder Canyon Golf Club,boulder-canyon-golf-club,gallery,10075,Boulder-Canyon-New-Image.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Boulder-Canyon-New-Image.jpg
+golf_course,Boulder Canyon Golf Club,boulder-canyon-golf-club,gallery,6456,slider01-crop-894x488-c3a7c.jpg,https://www.sdga.org/wp-content/uploads/2022/02/slider01-crop-894x488-c3a7c.jpg
+golf_course,Boulder Canyon Golf Club,boulder-canyon-golf-club,gallery,6461,home_bg_3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/home_bg_3.jpg
+golf_course,Boulder Canyon Golf Club,boulder-canyon-golf-club,gallery,6463,Russ-12-Green-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Russ-12-Green-2.jpg
+golf_course,Bowdle Golf Club,bowdle-golf-club,gallery,6474,19424376_693173820869349_636128976312548635_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/19424376_693173820869349_636128976312548635_n.jpg
+golf_course,Bowdle Golf Club,bowdle-golf-club,gallery,6473,13124624_496846703835396_8567583097361570973_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/13124624_496846703835396_8567583097361570973_n.jpg
+golf_course,Brandon Golf Course,brandon-golf-course,logo,6478,logo.png,https://www.sdga.org/wp-content/uploads/2022/02/logo.png
+golf_course,Brandon Golf Course,brandon-golf-course,gallery,6480,10981544_434080936754813_8251819184106078872_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/10981544_434080936754813_8251819184106078872_n.jpg
+golf_course,Brandon Golf Course,brandon-golf-course,gallery,6481,123355128_1891145077715051_2364331778018326559_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/123355128_1891145077715051_2364331778018326559_n.jpg
+golf_course,Brandon Golf Course,brandon-golf-course,gallery,6482,178346679_2041224759373748_1974378280544421763_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/178346679_2041224759373748_1974378280544421763_n.jpg
+golf_course,Bridges at Beresford Golf Club,bridges-at-beresford-golf-club,logo,6488,logo-1.png,https://www.sdga.org/wp-content/uploads/2022/02/logo-1.png
+golf_course,Bridges at Beresford Golf Club,bridges-at-beresford-golf-club,gallery,6702,Bridge.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Bridge.jpg
+golf_course,Bridges at Beresford Golf Club,bridges-at-beresford-golf-club,gallery,12572,Bridges-2.jpg,https://www.sdga.org/wp-content/uploads/2023/05/Bridges-2.jpg
+golf_course,Bridges at Beresford Golf Club,bridges-at-beresford-golf-club,gallery,12571,Bridges-Pic-1.jpg,https://www.sdga.org/wp-content/uploads/2023/05/Bridges-Pic-1.jpg
+golf_course,Britton Country Club,britton-country-club,logo,6498,brittoncountryclub-logo.jpg,https://www.sdga.org/wp-content/uploads/2022/02/brittoncountryclub-logo.jpg
+golf_course,Britton Country Club,britton-country-club,gallery,6496,10580000_1650601658491621_2420685014005306414_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/10580000_1650601658491621_2420685014005306414_n.jpg
+golf_course,Britton Country Club,britton-country-club,gallery,6493,1501036_1492331584318630_2668889191386666104_o.jpg,https://www.sdga.org/wp-content/uploads/2022/02/1501036_1492331584318630_2668889191386666104_o.jpg
+golf_course,Britton Country Club,britton-country-club,gallery,6494,65178434_2349841048567675_6460741135244460032_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/65178434_2349841048567675_6460741135244460032_n.jpg
+golf_course,Britton Country Club,britton-country-club,gallery,6495,244643630_3008504392701334_7622997131789074363_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/244643630_3008504392701334_7622997131789074363_n.jpg
+golf_course,Broadland Creek Nat'L Course,broadland-creek-natl-course,logo,6507,broadland-logo-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/broadland-logo-1.jpg
+golf_course,Broadland Creek Nat'L Course,broadland-creek-natl-course,gallery,6505,broadland.jpg,https://www.sdga.org/wp-content/uploads/2022/02/broadland.jpg
+golf_course,Broadland Creek Nat'L Course,broadland-creek-natl-course,gallery,6509,slide1-1-crop-894x488-452a0.jpg,https://www.sdga.org/wp-content/uploads/2022/02/slide1-1-crop-894x488-452a0.jpg
+golf_course,Brookings Country Club,brookings-country-club,logo,6518,Brookings-Logo-new.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Brookings-Logo-new.jpg
+golf_course,Brookings Country Club,brookings-country-club,gallery,6512,905606_1050884094985124_1662638048195022483_o.jpg,https://www.sdga.org/wp-content/uploads/2022/02/905606_1050884094985124_1662638048195022483_o.jpg
+golf_course,Brookings Country Club,brookings-country-club,gallery,6513,10272556_1050886904984843_8996567633971019576_o.jpg,https://www.sdga.org/wp-content/uploads/2022/02/10272556_1050886904984843_8996567633971019576_o.jpg
+golf_course,Brookings Country Club,brookings-country-club,gallery,6514,196956402_5753285881411565_5838667384934021183_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/196956402_5753285881411565_5838667384934021183_n.jpg
+golf_course,Cattail Crossing Golf Course,cattail-crossing-golf-course,logo,6526,Cattail-Logo.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Cattail-Logo.jpg
+golf_course,Cattail Crossing Golf Course,cattail-crossing-golf-course,gallery,12140,Cattail.jpg,https://www.sdga.org/wp-content/uploads/2023/03/Cattail.jpg
+golf_course,Cattail Crossing Golf Course,cattail-crossing-golf-course,gallery,6521,11753286_849281181785563_6850453476624307067_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/11753286_849281181785563_6850453476624307067_n.jpg
+golf_course,Cattail Crossing Golf Course,cattail-crossing-golf-course,gallery,6522,12004764_870955509618130_8953179819397604272_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/12004764_870955509618130_8953179819397604272_n.jpg
+golf_course,Cattail Crossing Golf Course,cattail-crossing-golf-course,gallery,6523,19402209_1323060037741006_7669271137075604093_o.jpg,https://www.sdga.org/wp-content/uploads/2022/02/19402209_1323060037741006_7669271137075604093_o.jpg
+golf_course,Cattail Crossing Golf Course,cattail-crossing-golf-course,gallery,12141,Cattail-2.jpg,https://www.sdga.org/wp-content/uploads/2023/03/Cattail-2.jpg
+golf_course,Central Valley Golf Course,central-valley-golf-course,logo,6595,CentralValleyGolfCourse.svg,https://www.sdga.org/wp-content/uploads/2022/02/CentralValleyGolfCourse.svg
+golf_course,Central Valley Golf Course,central-valley-golf-course,gallery,6600,31180025_1771371802901062_6263969957357289472_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/31180025_1771371802901062_6263969957357289472_n.jpg
+golf_course,Central Valley Golf Course,central-valley-golf-course,gallery,6601,97984350_3056599264378303_1055453844663697408_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/97984350_3056599264378303_1055453844663697408_n.jpg
+golf_course,Central Valley Golf Course,central-valley-golf-course,gallery,6602,243381014_253996413400474_6632457678950063381_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/243381014_253996413400474_6632457678950063381_n.jpg
+golf_course,Chamberlain Country Club,chamberlain-cc,gallery,6608,8467814_pHu-tiUFiMpt1-VU1W7Jd5NvxxwdnCXGR0fUDczZUCw-crop-894x488-7c700.jpg,https://www.sdga.org/wp-content/uploads/2022/02/8467814_pHu-tiUFiMpt1-VU1W7Jd5NvxxwdnCXGR0fUDczZUCw-crop-894x488-7c700.jpg
+golf_course,Chamberlain Country Club,chamberlain-cc,gallery,6605,104384034_3053602991397351_5350762963765235213_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/104384034_3053602991397351_5350762963765235213_n.jpg
+golf_course,Chamberlain Country Club,chamberlain-cc,gallery,6606,117693710_3201247986632850_3181636540458329123_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/117693710_3201247986632850_3181636540458329123_n.jpg
+golf_course,Chamberlain Country Club,chamberlain-cc,gallery,6607,71280228_2475981849159471_4379901382379962368_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/71280228_2475981849159471_4379901382379962368_n.jpg
+golf_course,Clark Golf Club,clark-golf-club,logo,6624,Clark-GC-Logo.svg,https://www.sdga.org/wp-content/uploads/2022/02/Clark-GC-Logo.svg
+golf_course,Clark Golf Club,clark-golf-club,gallery,12149,Clark-3.jpg,https://www.sdga.org/wp-content/uploads/2023/03/Clark-3.jpg
+golf_course,Clark Golf Club,clark-golf-club,gallery,12148,Clark-2.jpg,https://www.sdga.org/wp-content/uploads/2023/03/Clark-2.jpg
+golf_course,Clark Golf Club,clark-golf-club,gallery,12147,Clark.jpg,https://www.sdga.org/wp-content/uploads/2023/03/Clark.jpg
+golf_course,Clear Lake Golf Club,clear-lake-golf-club,logo,6633,cl-golf-lgo-b.gif,https://www.sdga.org/wp-content/uploads/2022/02/cl-golf-lgo-b.gif
+golf_course,Clear Lake Golf Club,clear-lake-golf-club,gallery,6629,Clear-Lake-Golf-Club1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Clear-Lake-Golf-Club1.jpg
+golf_course,Clear Lake Golf Club,clear-lake-golf-club,gallery,6630,Clear-Lake-Golf-Club2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Clear-Lake-Golf-Club2.jpg
+golf_course,Clear Lake Golf Club,clear-lake-golf-club,gallery,6631,Clear-Lake-Golf-Club3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Clear-Lake-Golf-Club3.jpg
+golf_course,Country Club of Sioux Falls,country-club-of-sioux-falls,logo,6721,logo-2.png,https://www.sdga.org/wp-content/uploads/2022/02/logo-2.png
+golf_course,Country Club of Sioux Falls,country-club-of-sioux-falls,gallery,6725,CC-sf-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/CC-sf-1.jpg
+golf_course,Dakota Dunes Country Club,dakota-dunes-country-club,logo,6727,DDCC-Logo.jpg,https://www.sdga.org/wp-content/uploads/2022/02/DDCC-Logo.jpg
+golf_course,Dakota Dunes Country Club,dakota-dunes-country-club,gallery,6729,DD-CC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/DD-CC-1.jpg
+golf_course,Dakota Dunes Country Club,dakota-dunes-country-club,gallery,6730,DD-CC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/DD-CC-2.jpg
+golf_course,Dakota Dunes Country Club,dakota-dunes-country-club,gallery,6731,DD-CC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/DD-CC-3.jpg
+golf_course,Dakota Dunes Country Club,dakota-dunes-country-club,gallery,6732,DD-CC-4.jpg,https://www.sdga.org/wp-content/uploads/2022/02/DD-CC-4.jpg
+golf_course,Edgebrook Golf Course,edgebrook-golf-course,logo,6744,EDGEBROOKcourse-logo.jpg,https://www.sdga.org/wp-content/uploads/2022/02/EDGEBROOKcourse-logo.jpg
+golf_course,Edgebrook Golf Course,edgebrook-golf-course,gallery,6741,Edgebrook_Hole-6.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Edgebrook_Hole-6.jpg
+golf_course,Edgebrook Golf Course,edgebrook-golf-course,gallery,6739,Edgebrook_Gazebo.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Edgebrook_Gazebo.jpg
+golf_course,Edgebrook Golf Course,edgebrook-golf-course,gallery,6740,Edgebrook_golf-sign-logo-ed.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Edgebrook_golf-sign-logo-ed.jpg
+golf_course,Edgebrook Golf Course,edgebrook-golf-course,gallery,6742,Edgebrook_Hole-16.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Edgebrook_Hole-16.jpg
+golf_course,Elkhorn Ridge Golf Club,elkhorn-ridge-golf-club,logo,6753,elkhorn-ridge-logo.svg,https://www.sdga.org/wp-content/uploads/2022/02/elkhorn-ridge-logo.svg
+golf_course,Elkhorn Ridge Golf Club,elkhorn-ridge-golf-club,gallery,6751,Elkhorn-back9.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Elkhorn-back9.jpg
+golf_course,Elkhorn Ridge Golf Club,elkhorn-ridge-golf-club,gallery,6750,Elkhorn-putting-green.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Elkhorn-putting-green.jpg
+golf_course,Elks Golf Course 1187,elks-golf-course-1187,logo,6759,RCE-Logo.jpg,https://www.sdga.org/wp-content/uploads/2022/02/RCE-Logo.jpg
+golf_course,Elks Golf Course 1187,elks-golf-course-1187,gallery,6762,RCE-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/RCE-2.jpg
+golf_course,Elks Golf Course 1187,elks-golf-course-1187,gallery,6761,RCE-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/RCE-1.jpg
+golf_course,Elks Golf Course 1187,elks-golf-course-1187,gallery,6763,RCE-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/RCE-3.jpg
+golf_course,Elmwood Golf Course,elmwood-golf-course,logo,9605,Elmwood-Logo.jpeg,https://www.sdga.org/wp-content/uploads/2022/03/Elmwood-Logo.jpeg
+golf_course,Elmwood Golf Course,elmwood-golf-course,gallery,9617,Elmwood-Pic1.jpg,https://www.sdga.org/wp-content/uploads/2022/03/Elmwood-Pic1.jpg
+golf_course,Elmwood Golf Course,elmwood-golf-course,gallery,9616,Elmwood-Pic2.jpg,https://www.sdga.org/wp-content/uploads/2022/03/Elmwood-Pic2.jpg
+golf_course,Elmwood Golf Course,elmwood-golf-course,gallery,9640,Elmwood-Scorecard-2.jpg,https://www.sdga.org/wp-content/uploads/2022/03/Elmwood-Scorecard-2.jpg
+golf_course,Elmwood Golf Course,elmwood-golf-course,gallery,9641,Elmwood-Scorecard-1.jpg,https://www.sdga.org/wp-content/uploads/2022/03/Elmwood-Scorecard-1.jpg
+golf_course,Fish Lake Country Club,fish-lake-country-club,logo,13203,Fish-Lake-Logo.jpg,https://www.sdga.org/wp-content/uploads/2023/07/Fish-Lake-Logo.jpg
+golf_course,Fish Lake Country Club,fish-lake-country-club,gallery,13206,Fish-Lake-Pic.png,https://www.sdga.org/wp-content/uploads/2023/07/Fish-Lake-Pic.png
+golf_course,Fisher Grove Country Club,fisher-grove-country-club,logo,6779,FGCC-Logo.png,https://www.sdga.org/wp-content/uploads/2022/02/FGCC-Logo.png
+golf_course,Fisher Grove Country Club,fisher-grove-country-club,gallery,16060,Fisher-Grove-Pic-2.jpg,https://www.sdga.org/wp-content/uploads/2025/01/Fisher-Grove-Pic-2.jpg
+golf_course,Fisher Grove Country Club,fisher-grove-country-club,gallery,16059,Fisher-Grove-Pic-1.jpg,https://www.sdga.org/wp-content/uploads/2025/01/Fisher-Grove-Pic-1.jpg
+golf_course,Fox Run Golf Course,fox-run-golf-course,logo,6782,Fox-Run-2.png,https://www.sdga.org/wp-content/uploads/2022/02/Fox-Run-2.png
+golf_course,Fox Run Golf Course,fox-run-golf-course,gallery,6785,Fox-Run-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Fox-Run-3.jpg
+golf_course,Fox Run Golf Course,fox-run-golf-course,gallery,6783,Fox-Run-5.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Fox-Run-5.jpg
+golf_course,Fox Run Golf Course,fox-run-golf-course,gallery,6784,Fox-Run-4.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Fox-Run-4.jpg
+golf_course,Fox Run Golf Course,fox-run-golf-course,gallery,6786,Fox-Run-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Fox-Run-1.jpg
+golf_course,Gettysburg Country Club,gettysburg-country-club,gallery,6797,Gettysburg-CC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Gettysburg-CC-3.jpg
+golf_course,Gettysburg Country Club,gettysburg-country-club,gallery,6795,Gettysburg-CC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Gettysburg-CC-1.jpg
+golf_course,Gettysburg Country Club,gettysburg-country-club,gallery,6796,Gettysburg-CC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Gettysburg-CC-2.jpg
+golf_course,Glenridge Golf Club,glenridge-golf-club,logo,6849,GlenridgeGolfClub-logo.jpg,https://www.sdga.org/wp-content/uploads/2022/02/GlenridgeGolfClub-logo.jpg
+golf_course,Glenridge Golf Club,glenridge-golf-club,gallery,6851,GlenridgeGolfClub-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/GlenridgeGolfClub-1.jpg
+golf_course,Glenridge Golf Club,glenridge-golf-club,gallery,6852,GlenridgeGolfClub-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/GlenridgeGolfClub-2.jpg
+golf_course,Glenridge Golf Club,glenridge-golf-club,gallery,6853,GlenridgeGolfClub-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/GlenridgeGolfClub-3.jpg
+golf_course,Glenridge Golf Club,glenridge-golf-club,gallery,6854,GlenridgeGolfClub-4.jpg,https://www.sdga.org/wp-content/uploads/2022/02/GlenridgeGolfClub-4.jpg
+golf_course,Golf Club at Red Rock,golf-club-at-red-rock,logo,6868,redrocklogo-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/redrocklogo-1.jpg
+golf_course,Golf Club at Red Rock,golf-club-at-red-rock,gallery,6865,Golfclubatredrock-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Golfclubatredrock-1.jpg
+golf_course,Golf Club at Red Rock,golf-club-at-red-rock,gallery,6862,Golfclubatredrock-4.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Golfclubatredrock-4.jpg
+golf_course,Golf Club at Red Rock,golf-club-at-red-rock,gallery,6863,Golfclubatredrock-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Golfclubatredrock-3.jpg
+golf_course,Golf Club at Red Rock,golf-club-at-red-rock,gallery,6864,Golfclubatredrock-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Golfclubatredrock-2.jpg
+golf_course,Golf Club at Red Rock,golf-club-at-red-rock,gallery,6866,Golfclubatredrock-5.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Golfclubatredrock-5.jpg
+golf_course,Hart Ranch Golf Club,hart-ranch-golf-club,logo,12329,New-Logo-Correct-Color.png,https://www.sdga.org/wp-content/uploads/2023/04/New-Logo-Correct-Color.png
+golf_course,Hart Ranch Golf Club,hart-ranch-golf-club,gallery,6874,HartRanch-Aerial.jpg,https://www.sdga.org/wp-content/uploads/2022/02/HartRanch-Aerial.jpg
+golf_course,Hart Ranch Golf Club,hart-ranch-golf-club,gallery,6876,Hart-Ranch-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Hart-Ranch-1.jpg
+golf_course,Hart Ranch Golf Club,hart-ranch-golf-club,gallery,6877,Hart-Ranch-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Hart-Ranch-2.jpg
+golf_course,Hart Ranch Golf Club,hart-ranch-golf-club,gallery,6878,Hart-Ranch-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Hart-Ranch-3.jpg
+golf_course,Hart Ranch Golf Club,hart-ranch-golf-club,gallery,6879,Hart-Ranch-4.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Hart-Ranch-4.jpg
+golf_course,Hart Ranch Golf Club,hart-ranch-golf-club,gallery,6880,Hart-Ranch-5.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Hart-Ranch-5.jpg
+golf_course,Hiawatha Golf Club,hiawatha-golf-club,gallery,15298,download-1.jpg,https://www.sdga.org/wp-content/uploads/2024/05/download-1.jpg
+golf_course,Hidden Valley Golf Course,hidden-valley-golf-course,gallery,21234,Hidden-Valley-Logo.png,https://www.sdga.org/wp-content/uploads/2026/02/Hidden-Valley-Logo.png
+golf_course,Hidden Valley Golf Course,hidden-valley-golf-course,gallery,15296,download.jpg,https://www.sdga.org/wp-content/uploads/2024/05/download.jpg
+golf_course,Hillcrest Golf &amp; Country Club,hillcrest-golf-country-club,logo,6886,HCC_Logo.jpg,https://www.sdga.org/wp-content/uploads/2022/02/HCC_Logo.jpg
+golf_course,Hillcrest Golf &amp; Country Club,hillcrest-golf-country-club,gallery,21310,Hillcrest-Clubhouse.png,https://www.sdga.org/wp-content/uploads/2026/02/Hillcrest-Clubhouse.png
+golf_course,Hillcrest Golf &amp; Country Club,hillcrest-golf-country-club,gallery,6888,HCC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/HCC-1.jpg
+golf_course,Hillcrest Golf &amp; Country Club,hillcrest-golf-country-club,gallery,6889,HCC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/HCC-2.jpg
+golf_course,Hillsview Golf Club,hillsview-golf-club,logo,6898,HVGC-Logo-01.svg,https://www.sdga.org/wp-content/uploads/2022/02/HVGC-Logo-01.svg
+golf_course,Hillsview Golf Club,hillsview-golf-club,gallery,6900,HVGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/HVGC-1.jpg
+golf_course,Hillsview Golf Club,hillsview-golf-club,gallery,6901,HVGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/HVGC-2.jpg
+golf_course,Hillsview Golf Club,hillsview-golf-club,gallery,6902,HVGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/HVGC-3.jpg
+golf_course,Hillsview Golf Club,hillsview-golf-club,gallery,6903,HVGC-4.jpg,https://www.sdga.org/wp-content/uploads/2022/02/HVGC-4.jpg
+golf_course,Hillsview Golf Club,hillsview-golf-club,gallery,6904,HVGC-5.jpg,https://www.sdga.org/wp-content/uploads/2022/02/HVGC-5.jpg
+golf_course,Huron Country Club,huron-country-club,logo,6917,HCC-Logo-01.svg,https://www.sdga.org/wp-content/uploads/2022/02/HCC-Logo-01.svg
+golf_course,Huron Country Club,huron-country-club,gallery,6914,HCC-5.jpg,https://www.sdga.org/wp-content/uploads/2022/02/HCC-5.jpg
+golf_course,Huron Country Club,huron-country-club,gallery,6911,HCC-1-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/HCC-1-1.jpg
+golf_course,Huron Country Club,huron-country-club,gallery,6912,HCC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/HCC-3.jpg
+golf_course,Huron Country Club,huron-country-club,gallery,6913,HCC-4.jpg,https://www.sdga.org/wp-content/uploads/2022/02/HCC-4.jpg
+golf_course,Kingsbury County Country Club,kingsbury-co-country-club,logo,6928,KCCC-Logo.jpg,https://www.sdga.org/wp-content/uploads/2022/02/KCCC-Logo.jpg
+golf_course,Kingsbury County Country Club,kingsbury-co-country-club,gallery,6924,KCCC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/KCCC-3.jpg
+golf_course,Kingsbury County Country Club,kingsbury-co-country-club,gallery,6922,KCCC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/KCCC-1.jpg
+golf_course,Kingsbury County Country Club,kingsbury-co-country-club,gallery,6923,KCCC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/KCCC-2.jpg
+golf_course,Kingsbury County Country Club,kingsbury-co-country-club,gallery,6930,Hole9FlagCloseup-crop-894x488-e27a0.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Hole9FlagCloseup-crop-894x488-e27a0.jpg
+golf_course,Kuehn Park Golf Course,kuehn-park-golf-course,logo,9628,KP-Logo.jpeg,https://www.sdga.org/wp-content/uploads/2022/03/KP-Logo.jpeg
+golf_course,Kuehn Park Golf Course,kuehn-park-golf-course,gallery,9633,KP-Pic2.jpg,https://www.sdga.org/wp-content/uploads/2022/03/KP-Pic2.jpg
+golf_course,Kuehn Park Golf Course,kuehn-park-golf-course,gallery,9631,KP-Pic4.jpg,https://www.sdga.org/wp-content/uploads/2022/03/KP-Pic4.jpg
+golf_course,Kuehn Park Golf Course,kuehn-park-golf-course,gallery,9632,KP-Pic3.jpg,https://www.sdga.org/wp-content/uploads/2022/03/KP-Pic3.jpg
+golf_course,Kuehn Park Golf Course,kuehn-park-golf-course,gallery,9634,KP-Pic1.jpg,https://www.sdga.org/wp-content/uploads/2022/03/KP-Pic1.jpg
+golf_course,Kuehn Park Golf Course,kuehn-park-golf-course,gallery,9636,Kuehn-Park-Scorecard1.jpg,https://www.sdga.org/wp-content/uploads/2022/03/Kuehn-Park-Scorecard1.jpg
+golf_course,Kuehn Park Golf Course,kuehn-park-golf-course,gallery,9635,Kuehn-Park-Scorecard2.jpg,https://www.sdga.org/wp-content/uploads/2022/03/Kuehn-Park-Scorecard2.jpg
+golf_course,Lake Region Golf Course,lake-region-golf-course,logo,6944,LRGC-Web-Logo.jpg,https://www.sdga.org/wp-content/uploads/2022/02/LRGC-Web-Logo.jpg
+golf_course,Lake Region Golf Course,lake-region-golf-course,gallery,6937,Lake-Region-GC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Lake-Region-GC-1.jpg
+golf_course,Lake Region Golf Course,lake-region-golf-course,gallery,6939,Lake-Region-GC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Lake-Region-GC-3.jpg
+golf_course,Lake Region Golf Course,lake-region-golf-course,gallery,6940,Lake-Region-GC-4.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Lake-Region-GC-4.jpg
+golf_course,Lake Region Golf Course,lake-region-golf-course,gallery,6942,banner-2-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/banner-2-1.jpg
+golf_course,Lake Waggoner Golf Club,lake-waggoner-golf-club,gallery,6950,Lake-Waggoner-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Lake-Waggoner-1.jpg
+golf_course,Lake Waggoner Golf Club,lake-waggoner-golf-club,gallery,6951,Lake-Waggoner-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Lake-Waggoner-2.jpg
+golf_course,Lakeside Country Club,lakeside-country-club,logo,6220,Screenshot202021-04-0720064206.png,https://www.sdga.org/wp-content/uploads/2022/02/Screenshot202021-04-0720064206.png
+golf_course,Lakeside Country Club,lakeside-country-club,gallery,6958,Lakeside-Country-Club-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Lakeside-Country-Club-2.jpg
+golf_course,Lakeside Country Club,lakeside-country-club,gallery,6957,Lakeside-Country-Club-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Lakeside-Country-Club-1.jpg
+golf_course,Lakeview Municipal Golf Club,lakeview-municipal-golf-club,logo,9671,Lakeview-New-Logo.png,https://www.sdga.org/wp-content/uploads/2022/03/Lakeview-New-Logo.png
+golf_course,Lakeview Municipal Golf Club,lakeview-municipal-golf-club,gallery,6962,LVMCG-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/LVMCG-1.jpg
+golf_course,Lakeview Municipal Golf Club,lakeview-municipal-golf-club,gallery,6963,LVMCG-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/LVMCG-2.jpg
+golf_course,Lakeview Municipal Golf Club,lakeview-municipal-golf-club,gallery,6964,LVMCG-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/LVMCG-3.jpg
+golf_course,Lakeview Municipal Golf Club,lakeview-municipal-golf-club,gallery,6965,LVMCG-4.jpg,https://www.sdga.org/wp-content/uploads/2022/02/LVMCG-4.jpg
+golf_course,Lead Country Club,lead-country-club,logo,7712,LCC.jpg,https://www.sdga.org/wp-content/uploads/2022/02/LCC.jpg
+golf_course,Lead Country Club,lead-country-club,gallery,7714,LCC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/LCC-1.jpg
+golf_course,Lead Country Club,lead-country-club,gallery,7715,LCC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/LCC-2.jpg
+golf_course,Lead Country Club,lead-country-club,gallery,7716,LCC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/LCC-3.jpg
+golf_course,Lee Park Golf Club,lee-park-golf-club,logo,6221,leePark.png,https://www.sdga.org/wp-content/uploads/2022/02/leePark.png
+golf_course,Lee Park Golf Club,lee-park-golf-club,gallery,7732,Lee-Park-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Lee-Park-1.jpg
+golf_course,Lee Park Golf Club,lee-park-golf-club,gallery,7730,Lee-Park-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Lee-Park-2.jpg
+golf_course,Lee Park Golf Club,lee-park-golf-club,gallery,7733,Lee-Park-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Lee-Park-3.jpg
+golf_course,Lee Park Golf Club,lee-park-golf-club,gallery,7734,Lee-Park-4.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Lee-Park-4.jpg
+golf_course,Lenkota Country Club,lenkota-country-club,logo,7753,LenkotaLogo.jpg,https://www.sdga.org/wp-content/uploads/2022/02/LenkotaLogo.jpg
+golf_course,Lenkota Country Club,lenkota-country-club,gallery,7751,Lenkota-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Lenkota-3.jpg
+golf_course,Lenkota Country Club,lenkota-country-club,gallery,7749,Lenkota-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Lenkota-1.jpg
+golf_course,Lenkota Country Club,lenkota-country-club,gallery,7750,Lenkota-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Lenkota-2.jpg
+golf_course,Leola Country Club,leola-country-club,logo,15830,Leola-Country-Club.jpg,https://www.sdga.org/wp-content/uploads/2024/12/Leola-Country-Club.jpg
+golf_course,Leola Country Club,leola-country-club,gallery,15830,Leola-Country-Club.jpg,https://www.sdga.org/wp-content/uploads/2024/12/Leola-Country-Club.jpg
+golf_course,Leola Country Club,leola-country-club,gallery,15829,Leola-Clubhouse.jpg,https://www.sdga.org/wp-content/uploads/2024/12/Leola-Clubhouse.jpg
+golf_course,Leola Country Club,leola-country-club,gallery,15831,Leola-Green.jpg,https://www.sdga.org/wp-content/uploads/2024/12/Leola-Green.jpg
+golf_course,Leola Country Club,leola-country-club,gallery,15832,Leola-In-Memory.jpg,https://www.sdga.org/wp-content/uploads/2024/12/Leola-In-Memory.jpg
+golf_course,Madison Country Club,madison-country-club,logo,7763,5655367.jpg,https://www.sdga.org/wp-content/uploads/2022/02/5655367.jpg
+golf_course,Madison Country Club,madison-country-club,gallery,7758,MadisonCC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MadisonCC-2.jpg
+golf_course,Madison Country Club,madison-country-club,gallery,7757,MadisonCC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MadisonCC-1.jpg
+golf_course,Madison Country Club,madison-country-club,gallery,7759,MadisonCC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MadisonCC-3.jpg
+golf_course,Mapleton Golf Club,mapleton-golf-club,logo,17492,230906_MapletonGolfClub_Logo_RGB_Icon_Color.png,https://www.sdga.org/wp-content/uploads/2025/03/230906_MapletonGolfClub_Logo_RGB_Icon_Color.png
+golf_course,Mapleton Golf Club,mapleton-golf-club,gallery,21236,Mapleton-Clubhouse-Pic.png,https://www.sdga.org/wp-content/uploads/2026/02/Mapleton-Clubhouse-Pic.png
+golf_course,Mapleton Golf Club,mapleton-golf-club,gallery,17492,230906_MapletonGolfClub_Logo_RGB_Icon_Color.png,https://www.sdga.org/wp-content/uploads/2025/03/230906_MapletonGolfClub_Logo_RGB_Icon_Color.png
+golf_course,Mapleton Golf Club,mapleton-golf-club,gallery,21238,Mapleton-Pic-1.png,https://www.sdga.org/wp-content/uploads/2026/02/Mapleton-Pic-1.png
+golf_course,Mapleton Golf Club,mapleton-golf-club,gallery,21239,Mapleton-Silo-Pic.png,https://www.sdga.org/wp-content/uploads/2026/02/Mapleton-Silo-Pic.png
+golf_course,Mapleton Golf Club,mapleton-golf-club,gallery,21237,Mapleton-Course-Map-Pic.png,https://www.sdga.org/wp-content/uploads/2026/02/Mapleton-Course-Map-Pic.png
+golf_course,McCook Country Club,mccook-country-club,logo,8380,McCookCC-Logo.svg,https://www.sdga.org/wp-content/uploads/2022/02/McCookCC-Logo.svg
+golf_course,McCook Country Club,mccook-country-club,gallery,7765,McCookCC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/McCookCC-1.jpg
+golf_course,Meadow Creek Golf Course,meadow-creek-golf-course,logo,7770,MeadowCreekLogo.png,https://www.sdga.org/wp-content/uploads/2022/02/MeadowCreekLogo.png
+golf_course,Meadow Creek Golf Course,meadow-creek-golf-course,gallery,7772,MeadowCreakGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MeadowCreakGC-2.jpg
+golf_course,Meadow Creek Golf Course,meadow-creek-golf-course,gallery,7773,MeadowCreakGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MeadowCreakGC-3.jpg
+golf_course,Meadow Creek Golf Course,meadow-creek-golf-course,gallery,7771,MeadowCreakGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MeadowCreakGC-1.jpg
+golf_course,Meadowbrook Golf Club,meadowbrook-golf-course,logo,22712,Meadowbrook-Golf-Club-Main-Logo.png,https://www.sdga.org/wp-content/uploads/2026/05/Meadowbrook-Golf-Club-Main-Logo.png
+golf_course,Meadowbrook Golf Club,meadowbrook-golf-course,gallery,7783,MeadowbrookGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MeadowbrookGC-1.jpg
+golf_course,Meadowbrook Golf Club,meadowbrook-golf-course,gallery,7785,MeadowbrookGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MeadowbrookGC-3.jpg
+golf_course,Meadowbrook Golf Club,meadowbrook-golf-course,gallery,7784,MeadowbrookGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MeadowbrookGC-2.jpg
+golf_course,Medicine Creek CC,medicine-creek-cc,logo,22601,Medicine20Creek20Golf20Course-12022.png,https://www.sdga.org/wp-content/uploads/2026/03/Medicine20Creek20Golf20Course-12022.png
+golf_course,Medicine Creek CC,medicine-creek-cc,gallery,12135,Medicine-Creek.jpg,https://www.sdga.org/wp-content/uploads/2023/03/Medicine-Creek.jpg
+golf_course,Miller Golf Course,miller-golf-course,logo,7789,MillerGCLogo-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MillerGCLogo-2.jpg
+golf_course,Miller Golf Course,miller-golf-course,gallery,7791,MillerGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MillerGC-2.jpg
+golf_course,Miller Golf Course,miller-golf-course,gallery,7790,MillerGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MillerGC-1.jpg
+golf_course,Miller Golf Course,miller-golf-course,gallery,7792,MillerGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MillerGC-3.jpg
+golf_course,Minnehaha Country Club,minnehaha-country-club,logo,17345,MCC-Logo-Black.jpg,https://www.sdga.org/wp-content/uploads/2025/02/MCC-Logo-Black.jpg
+golf_course,Minnehaha Country Club,minnehaha-country-club,gallery,7796,MinnehahaCC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MinnehahaCC-1.jpg
+golf_course,Moccasin Creek Country Club,moccasin-creek-country-club,logo,16384,blue-logo-jpg.jpg,https://www.sdga.org/wp-content/uploads/2025/01/blue-logo-jpg.jpg
+golf_course,Moccasin Creek Country Club,moccasin-creek-country-club,gallery,7799,MoccasinCreekCC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MoccasinCreekCC-1.jpg
+golf_course,Moccasin Creek Country Club,moccasin-creek-country-club,gallery,7800,MoccasinCreekCC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/MoccasinCreekCC-2.jpg
+golf_course,Murdo Golf Club,murdo-golf-club,gallery,12133,Murdo.jpg,https://www.sdga.org/wp-content/uploads/2023/03/Murdo.jpg
+golf_course,Murdo Golf Club,murdo-golf-club,gallery,17367,Murdo-Course.png,https://www.sdga.org/wp-content/uploads/2025/02/Murdo-Course.png
+golf_course,Murdo Golf Club,murdo-golf-club,gallery,17366,Murdo-New-Green.png,https://www.sdga.org/wp-content/uploads/2025/02/Murdo-New-Green.png
+golf_course,Newell Golf Club,newell-golf-club,gallery,7804,NewellGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/NewellGC-2.jpg
+golf_course,Newell Golf Club,newell-golf-club,gallery,7805,NewellGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/NewellGC-3.jpg
+golf_course,Newell Golf Club,newell-golf-club,gallery,7803,NewellGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/NewellGC-1.jpg
+golf_course,Northern Links Golf Course,northern-links-golf-course,logo,7807,NorthernLinks-Logo.png,https://www.sdga.org/wp-content/uploads/2022/02/NorthernLinks-Logo.png
+golf_course,Northern Links Golf Course,northern-links-golf-course,gallery,7808,NorthernLinksGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/NorthernLinksGC-1.jpg
+golf_course,Northern Links Golf Course,northern-links-golf-course,gallery,7809,NorthernLinksGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/NorthernLinksGC-2.jpg
+golf_course,Northern Links Golf Course,northern-links-golf-course,gallery,7810,NorthernLinksGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/NorthernLinksGC-3.jpg
+golf_course,Oahe Hills Golf Course,oahe-hills-golf-course,logo,8391,Oahe-Hills-Logo.svg,https://www.sdga.org/wp-content/uploads/2022/02/Oahe-Hills-Logo.svg
+golf_course,Oahe Hills Golf Course,oahe-hills-golf-course,gallery,7813,OaheHillsGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/OaheHillsGC-1.jpg
+golf_course,Oahe Hills Golf Course,oahe-hills-golf-course,gallery,7814,OaheHillsGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/OaheHillsGC-2.jpg
+golf_course,Oahe Hills Golf Course,oahe-hills-golf-course,gallery,7815,OaheHillsGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/OaheHillsGC-3.jpg
+golf_course,Olive Grove Golf Course,olive-grove-golf-course,logo,8450,Olive-Grove-Logo.svg,https://www.sdga.org/wp-content/uploads/2022/02/Olive-Grove-Logo.svg
+golf_course,Olive Grove Golf Course,olive-grove-golf-course,gallery,7820,OliveGroveGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/OliveGroveGC-3.jpg
+golf_course,Olive Grove Golf Course,olive-grove-golf-course,gallery,7818,OliveGroveGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/OliveGroveGC-1.jpg
+golf_course,Olive Grove Golf Course,olive-grove-golf-course,gallery,7819,OliveGroveGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/OliveGroveGC-2.jpg
+golf_course,Parkston Country Club,parkston-country-club,logo,9975,Parkston-CC.png,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-CC.png
+golf_course,Parkston Country Club,parkston-country-club,gallery,9976,Golf_Course_Website_010.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Golf_Course_Website_010.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9977,Parkston-9.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-9.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9978,Parkston-9-2.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-9-2.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9979,Parkston-9-3.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-9-3.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9980,Parkston-9-4.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-9-4.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9981,Parkston-8.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-8.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9982,Parkston-8-2.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-8-2.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9983,Parkston-7.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-7.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9984,Parkston-7-2.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-7-2.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9985,Parkston-7-3.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-7-3.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9986,Parkston-6.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-6.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9987,Parkston-6-2.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-6-2.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9988,Parkston-5.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-5.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9989,Parkston-5-2.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-5-2.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9990,Parkston-5-3.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-5-3.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9991,Parkston-4.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-4.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9992,Parkston-4-2.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-4-2.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9993,Parkston-3.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-3.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9994,Parkston-3-2.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-3-2.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9995,Parkston-3-3.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-3-3.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9996,Parkston-2.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-2.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9997,Parkston-2-2.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-2-2.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9998,Parkston-2-3.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-2-3.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,9999,Parkston-1.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-1.jpg
+golf_course,Parkston Country Club,parkston-country-club,gallery,10000,Parkston-1-1.jpg,https://www.sdga.org/wp-content/uploads/2022/04/Parkston-1-1.jpg
+golf_course,Prairie Green Golf Course,prairie-green-golf-course,logo,9627,PG-Logo.jpeg,https://www.sdga.org/wp-content/uploads/2022/03/PG-Logo.jpeg
+golf_course,Prairie Green Golf Course,prairie-green-golf-course,gallery,9625,PG-Pic1.jpg,https://www.sdga.org/wp-content/uploads/2022/03/PG-Pic1.jpg
+golf_course,Prairie Green Golf Course,prairie-green-golf-course,gallery,9623,PG-Pic3.jpeg,https://www.sdga.org/wp-content/uploads/2022/03/PG-Pic3.jpeg
+golf_course,Prairie Green Golf Course,prairie-green-golf-course,gallery,9624,PG-Pic2.jpg,https://www.sdga.org/wp-content/uploads/2022/03/PG-Pic2.jpg
+golf_course,Prairie Green Golf Course,prairie-green-golf-course,gallery,9637,PG-Card2.jpg,https://www.sdga.org/wp-content/uploads/2022/03/PG-Card2.jpg
+golf_course,Prairie Green Golf Course,prairie-green-golf-course,gallery,9638,PG-Card1.jpg,https://www.sdga.org/wp-content/uploads/2022/03/PG-Card1.jpg
+golf_course,Prairie Ridge Golf Course,prairie-ridge-golf-course,logo,8373,PR-Golf-Course-Logo-01.png,https://www.sdga.org/wp-content/uploads/2022/02/PR-Golf-Course-Logo-01.png
+golf_course,Prairie Ridge Golf Course,prairie-ridge-golf-course,gallery,8377,PRGC2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/PRGC2.jpg
+golf_course,Prairie Ridge Golf Course,prairie-ridge-golf-course,gallery,8376,PRGC1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/PRGC1.jpg
+golf_course,Prairie Ridge Golf Course,prairie-ridge-golf-course,gallery,8378,Golf.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Golf.jpg
+golf_course,Prairie Winds Golf Club,prairie-winds-golf-club,logo,9686,Prairie_Winds_Golf_Club-logo.jpg,https://www.sdga.org/wp-content/uploads/2022/03/Prairie_Winds_Golf_Club-logo.jpg
+golf_course,Prairie Winds Golf Club,prairie-winds-golf-club,gallery,7838,PrairieWindGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/PrairieWindGC-1.jpg
+golf_course,Prairie Winds Golf Club,prairie-winds-golf-club,gallery,7839,PrairieWindGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/PrairieWindGC-2.jpg
+golf_course,Prairie Winds Golf Club,prairie-winds-golf-club,gallery,7840,PrairieWindGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/PrairieWindGC-3.jpg
+golf_course,Prairie Winds Golf Club,prairie-winds-golf-club,gallery,12143,Prairie-Winds.jpg,https://www.sdga.org/wp-content/uploads/2023/03/Prairie-Winds.jpg
+golf_course,River Ridge Golf Club,river-ridge-golf-club,logo,8394,River-Ridge-Golf-Logo.svg,https://www.sdga.org/wp-content/uploads/2022/02/River-Ridge-Golf-Logo.svg
+golf_course,River Ridge Golf Club,river-ridge-golf-club,gallery,7844,RiverRidgeGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/RiverRidgeGC-2.jpg
+golf_course,River Ridge Golf Club,river-ridge-golf-club,gallery,7843,RiverRidgeGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/RiverRidgeGC-1.jpg
+golf_course,River Ridge Golf Club,river-ridge-golf-club,gallery,7845,RiverRidgeGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/RiverRidgeGC-3.jpg
+golf_course,River's Bend Country Club,rivers-bend-country-club,logo,7850,RiversBendCC-Logo.png,https://www.sdga.org/wp-content/uploads/2022/02/RiversBendCC-Logo.png
+golf_course,River's Bend Country Club,rivers-bend-country-club,gallery,7854,RiversBendCC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/RiversBendCC-3.jpg
+golf_course,River's Bend Country Club,rivers-bend-country-club,gallery,7853,RiversBendCC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/RiversBendCC-2.jpg
+golf_course,River's Bend Country Club,rivers-bend-country-club,gallery,7852,RiversBendCC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/RiversBendCC-1.jpg
+golf_course,Rocky Knolls Golf Course,rocky-knolls-golf-course,logo,9700,Rock-Knolls-Logo.jpg,https://www.sdga.org/wp-content/uploads/2022/03/Rock-Knolls-Logo.jpg
+golf_course,Rocky Knolls Golf Course,rocky-knolls-golf-course,gallery,12155,Rocky-Knolls.jpg,https://www.sdga.org/wp-content/uploads/2023/03/Rocky-Knolls.jpg
+golf_course,Rocky Knolls Golf Course,rocky-knolls-golf-course,gallery,7858,RockyKnollsGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/RockyKnollsGC-2.jpg
+golf_course,Rocky Knolls Golf Course,rocky-knolls-golf-course,gallery,7859,RockyKnollsGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/RockyKnollsGC-3.jpg
+golf_course,Rocky Knolls Golf Course,rocky-knolls-golf-course,gallery,12156,Rocky-Knolls-2.jpg,https://www.sdga.org/wp-content/uploads/2023/03/Rocky-Knolls-2.jpg
+golf_course,Rocky Run Golf Course,rocky-run-golf-course,logo,6659,RockyRun_Logo_FullC.svg,https://www.sdga.org/wp-content/uploads/2022/02/RockyRun_Logo_FullC.svg
+golf_course,Rocky Run Golf Course,rocky-run-golf-course,gallery,6661,RockyRun-GreatLIFE.jpg,https://www.sdga.org/wp-content/uploads/2022/02/RockyRun-GreatLIFE.jpg
+golf_course,Rocky Run Golf Course,rocky-run-golf-course,gallery,6662,hole91.jpg,https://www.sdga.org/wp-content/uploads/2022/02/hole91.jpg
+golf_course,Rocky Run Golf Course,rocky-run-golf-course,gallery,6663,hole16-600.jpg,https://www.sdga.org/wp-content/uploads/2022/02/hole16-600.jpg
+golf_course,Rolling Hills Golf Club,rolling-hills-golf-club,gallery,21230,Rolling-HIlls-GC-1.png,https://www.sdga.org/wp-content/uploads/2026/02/Rolling-HIlls-GC-1.png
+golf_course,Rolling Hills Golf Club,rolling-hills-golf-club,gallery,21367,Rolling-Hills-Logo.png,https://www.sdga.org/wp-content/uploads/2026/02/Rolling-Hills-Logo.png
+golf_course,Southern Hills Golf Course,southern-hills-golf-course,logo,9705,Southern-Hills-Logo.png,https://www.sdga.org/wp-content/uploads/2022/03/Southern-Hills-Logo.png
+golf_course,Southern Hills Golf Course,southern-hills-golf-course,gallery,7863,SouthernHillsGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SouthernHillsGC-1.jpg
+golf_course,Southern Hills Golf Course,southern-hills-golf-course,gallery,7864,SouthernHillsGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SouthernHillsGC-2.jpg
+golf_course,Southern Hills Golf Course,southern-hills-golf-course,gallery,7865,SouthernHillsGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SouthernHillsGC-3.jpg
+golf_course,Spearfish Canyon Country Club,spearfish-canyon-country-club,logo,8228,logo-3.png,https://www.sdga.org/wp-content/uploads/2022/02/logo-3.png
+golf_course,Spearfish Canyon Country Club,spearfish-canyon-country-club,gallery,8230,SpearfishCanyonCC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SpearfishCanyonCC-2.jpg
+golf_course,Spearfish Canyon Country Club,spearfish-canyon-country-club,gallery,8229,SpearfishCanyonCC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SpearfishCanyonCC-1.jpg
+golf_course,Spearfish Canyon Country Club,spearfish-canyon-country-club,gallery,8231,SpearfishCanyonCC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SpearfishCanyonCC-3.jpg
+golf_course,Split Rock Country Club,split-rock-country-club,gallery,15304,download-3.jpg,https://www.sdga.org/wp-content/uploads/2024/05/download-3.jpg
+golf_course,Springs Country Club,springs-country-club,logo,8243,SpringsCC-Logo.png,https://www.sdga.org/wp-content/uploads/2022/02/SpringsCC-Logo.png
+golf_course,Springs Country Club,springs-country-club,gallery,8239,SpringsCC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SpringsCC-1.jpg
+golf_course,Springs Country Club,springs-country-club,gallery,8240,SpringsCC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SpringsCC-2.jpg
+golf_course,Springs Country Club,springs-country-club,gallery,8241,SpringsCC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SpringsCC-3.jpg
+golf_course,Sutton Bay,sutton-bay,logo,10602,Sutton-Bay-Logo-Transparent-Background-1.png,https://www.sdga.org/wp-content/uploads/2022/05/Sutton-Bay-Logo-Transparent-Background-1.png
+golf_course,Sutton Bay,sutton-bay,gallery,8247,SuttonBay-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SuttonBay-2.jpg
+golf_course,Sutton Bay,sutton-bay,gallery,8246,SuttonBay-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SuttonBay-1.jpg
+golf_course,Sutton Bay,sutton-bay,gallery,8248,SuttonBay-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SuttonBay-3.jpg
+golf_course,The Bluffs Golf Course,the-bluffs-golf-course,logo,8389,The-Bluffs-GC-Logo.svg,https://www.sdga.org/wp-content/uploads/2022/02/The-Bluffs-GC-Logo.svg
+golf_course,The Bluffs Golf Course,the-bluffs-golf-course,gallery,8250,TheBluffsGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/TheBluffsGC-1.jpg
+golf_course,The Bluffs Golf Course,the-bluffs-golf-course,gallery,8251,TheBluffsGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/TheBluffsGC-2.jpg
+golf_course,The Bluffs Golf Course,the-bluffs-golf-course,gallery,8252,TheBluffsGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/TheBluffsGC-3.jpg
+golf_course,The Creek Golf Course,the-creek-golf-course,logo,22885,TCG_FullColor_Primary.svg,https://www.sdga.org/wp-content/uploads/2026/07/TCG_FullColor_Primary.svg
+golf_course,The Creek Golf Course,the-creek-golf-course,gallery,8236,SpringCreekCC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SpringCreekCC-3.jpg
+golf_course,The Creek Golf Course,the-creek-golf-course,gallery,8234,SpringCreekCC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SpringCreekCC-1.jpg
+golf_course,The Creek Golf Course,the-creek-golf-course,gallery,8235,SpringCreekCC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/SpringCreekCC-2.jpg
+golf_course,The Lakes Golf Course,the-lakes-golf-course,logo,8255,TheLakes-Logo.png,https://www.sdga.org/wp-content/uploads/2022/02/TheLakes-Logo.png
+golf_course,The Lakes Golf Course,the-lakes-golf-course,gallery,8256,TheLakesGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/TheLakesGC-1.jpg
+golf_course,The Lakes Golf Course,the-lakes-golf-course,gallery,8258,TheLakesGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/TheLakesGC-3.jpg
+golf_course,The Lakes Golf Course,the-lakes-golf-course,gallery,8257,TheLakesGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/TheLakesGC-2.jpg
+golf_course,The Pointe Golf &amp; Event Center,the-pointe-golf-event-center,gallery,12129,Elk-Point.jpg,https://www.sdga.org/wp-content/uploads/2023/03/Elk-Point.jpg
+golf_course,Tomahawk Lake Country Club,tomahawk-lake-country-club,logo,8260,TomahawkLakeCC-Logo.png,https://www.sdga.org/wp-content/uploads/2022/02/TomahawkLakeCC-Logo.png
+golf_course,Tomahawk Lake Country Club,tomahawk-lake-country-club,gallery,8263,TomahawkLakeCC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/TomahawkLakeCC-3.jpg
+golf_course,Tomahawk Lake Country Club,tomahawk-lake-country-club,gallery,8262,TomahawkLakeCC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/TomahawkLakeCC-2.jpg
+golf_course,Tomahawk Lake Country Club,tomahawk-lake-country-club,gallery,8261,TomahawkLakeCC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/TomahawkLakeCC-1.jpg
+golf_course,Two Rivers Golf Club,two-rivers-golf-club,logo,8269,TwoRivers-Logo.jpg,https://www.sdga.org/wp-content/uploads/2022/02/TwoRivers-Logo.jpg
+golf_course,Two Rivers Golf Club,two-rivers-golf-club,gallery,8266,TwoRiversGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/TwoRiversGC-1.jpg
+golf_course,Two Rivers Golf Club,two-rivers-golf-club,gallery,8267,TwoRiversGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/TwoRiversGC-2.jpg
+golf_course,Two Rivers Golf Club,two-rivers-golf-club,gallery,8268,TwoRiversGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/TwoRiversGC-3.jpg
+golf_course,Valley View Country Club,valley-view-country-club,logo,6223,VVCC20LOGO20color.jpg,https://www.sdga.org/wp-content/uploads/2022/02/VVCC20LOGO20color.jpg
+golf_course,Valley View Country Club,valley-view-country-club,gallery,8277,ValleyViewCC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/ValleyViewCC-1.jpg
+golf_course,Valley View Country Club,valley-view-country-club,gallery,8278,ValleyViewCC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/ValleyViewCC-2.jpg
+golf_course,Valley View Country Club,valley-view-country-club,gallery,8279,ValleyViewCC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/ValleyViewCC-3.jpg
+golf_course,Valley View Golf Course,valley-view-golf-course,logo,8287,ValleyViewGC-Logo.png,https://www.sdga.org/wp-content/uploads/2022/02/ValleyViewGC-Logo.png
+golf_course,Valley View Golf Course,valley-view-golf-course,gallery,8294,ValleyViewGC-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/ValleyViewGC-1.jpg
+golf_course,Valley View Golf Course,valley-view-golf-course,gallery,8295,ValleyViewGC-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/ValleyViewGC-2.jpg
+golf_course,Valley View Golf Course,valley-view-golf-course,gallery,8296,ValleyViewGC-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/ValleyViewGC-3.jpg
+golf_course,Webster Municipal Golf Course,webster-municipal-golf-course,gallery,6835,Webster1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Webster1.jpg
+golf_course,Webster Municipal Golf Course,webster-municipal-golf-course,gallery,6836,Webster2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Webster2.jpg
+golf_course,Whetstone Creek Golf Course,whetstone-creek-gc,logo,6825,57009081_280263226197568_4336911139158884352_n.jpg,https://www.sdga.org/wp-content/uploads/2022/02/57009081_280263226197568_4336911139158884352_n.jpg
+golf_course,Whetstone Creek Golf Course,whetstone-creek-gc,gallery,6829,Whetstone-1.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Whetstone-1.jpg
+golf_course,Whetstone Creek Golf Course,whetstone-creek-gc,gallery,6830,Whetstone-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Whetstone-2.jpg
+golf_course,Wild Oak Golf Course,wild-oak-golf-course,logo,6833,Wild-Oak-Logo.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Wild-Oak-Logo.jpg
+golf_course,Wild Oak Golf Course,wild-oak-golf-course,gallery,6815,Wild-Oak-2.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Wild-Oak-2.jpg
+golf_course,Wild Oak Golf Course,wild-oak-golf-course,gallery,6816,Wild-Oak-3.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Wild-Oak-3.jpg
+golf_course,Wild Oak Golf Course,wild-oak-golf-course,gallery,6817,Wild-Oak-4.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Wild-Oak-4.jpg
+golf_course,Willow Run Golf Course,willow-run-golf-course,logo,6639,WillowRun.svg,https://www.sdga.org/wp-content/uploads/2022/02/WillowRun.svg
+golf_course,Willow Run Golf Course,willow-run-golf-course,gallery,6653,Willow-Run-Golf-Course-GreatLIFE-Sioux-Falls-09.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Willow-Run-Golf-Course-GreatLIFE-Sioux-Falls-09.jpg
+golf_course,Willow Run Golf Course,willow-run-golf-course,gallery,6654,Willow-Run-Golf-Course-GreatLIFE-Sioux-Falls-03530e1fd936695.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Willow-Run-Golf-Course-GreatLIFE-Sioux-Falls-03530e1fd936695.jpg
+golf_course,Willow Run Golf Course,willow-run-golf-course,gallery,6655,Willow-Run-Golf-Course-GreatLIFE-Sioux-Falls-07530e1fdb74562.jpg,https://www.sdga.org/wp-content/uploads/2022/02/Willow-Run-Golf-Course-GreatLIFE-Sioux-Falls-07530e1fdb74562.jpg
+golf_course,Winner Country Club,winner-country-club,gallery,12131,Winner.jpg,https://www.sdga.org/wp-content/uploads/2023/03/Winner.jpg
